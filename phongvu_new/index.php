@@ -406,6 +406,7 @@
         <div class="row main-product">
 
             <div class="col-lg-6">
+
                 <div class="block">
                     
                     <div class="row">
@@ -415,111 +416,124 @@
                             <a href="#" class="show-more float-right pr-2">Xem tất cả <i class="fas fa-angle-right"></i></a>
                         </div>   
 
-                        <div class="col-md-4">
-                            <img src="assets/images/product-b1.webp" alt="" class="img-fluid">
-                        </div>
+                        <div class="col-md-12">
 
-                        <div class="col-md-8">
-
-
-                            <div class="row">
-                                <div class="col-sm-6 product-items">
+                            <div class="d-flex">
+                                <figure class="flex-grow d-none d-md-block overflow-hidden">
+                                    <img src="assets/images/product-b1.webp" alt="" class="w-100 h-100">
+                                </figure>
+                                <div class="flex-fill grid-block">
                                     <a href="#">
-                                        <div type="subtitle" class="css-1odsp4p">MSI Gaming</div>
-                                        <div type="body" class="css-neo3za">Sức mạnh từ nhà rồng</div>
-                                        <div height="94px" class="css-172u6mc">
-                                            <img src="https://lh3.googleusercontent.com/e_el7oKeE6ThnLxr8otVDYdDjMqed_DcWTqfh2Zw4CrAgWTgSE1UJaQzxo5bgb_oPhdsTpetXsw9w0XMhDOajt-GGaUoD1d_2Q=rw-w300" loading="lazy" height="94px" decoding="async" alt="MSI Gaming" class="css-18b4n58">
+                                        <div class="product-items text-center">
+                                            <div class="title">MSI Gaming</div>
+                                            <small>Sức mạnh từ nhà rồng</small>
+                                            <figure>
+                                                <img src="assets/images/product1.webp" alt="MSI Gaming" class="css-18b4n58">
+                                            </figure>
                                         </div>
                                     </a>
-                                </div>
-                                <div class="col-sm-6 product-items">
+
                                     <a href="#">
-                                        <div type="subtitle" class="css-1odsp4p">MSI Gaming</div>
-                                        <div type="body" class="css-neo3za">Sức mạnh từ nhà rồng</div>
-                                        <div height="94px" class="css-172u6mc">
-                                            <img src="https://lh3.googleusercontent.com/e_el7oKeE6ThnLxr8otVDYdDjMqed_DcWTqfh2Zw4CrAgWTgSE1UJaQzxo5bgb_oPhdsTpetXsw9w0XMhDOajt-GGaUoD1d_2Q=rw-w300" loading="lazy" height="94px" decoding="async" alt="MSI Gaming" class="css-18b4n58">
+                                        <div class="product-items text-center">
+                                            <div class="title">MSI Gaming</div>
+                                            <small>Sức mạnh từ nhà rồng</small>
+                                            <figure>
+                                                <img src="assets/images/product2.webp" alt="MSI Gaming" class="css-18b4n58">
+                                            </figure>
                                         </div>
                                     </a>
-                                </div>
-                                <div class="col-sm-6 product-items">
+
                                     <a href="#">
-                                        <div type="subtitle" class="css-1odsp4p">MSI Gaming</div>
-                                        <div type="body" class="css-neo3za">Sức mạnh từ nhà rồng</div>
-                                        <div height="94px" class="css-172u6mc">
-                                            <img src="https://lh3.googleusercontent.com/e_el7oKeE6ThnLxr8otVDYdDjMqed_DcWTqfh2Zw4CrAgWTgSE1UJaQzxo5bgb_oPhdsTpetXsw9w0XMhDOajt-GGaUoD1d_2Q=rw-w300" loading="lazy" height="94px" decoding="async" alt="MSI Gaming" class="css-18b4n58">
+                                        <div class="product-items text-center">
+                                            <div class="title">MSI Gaming</div>
+                                            <small>Sức mạnh từ nhà rồng</small>
+                                            <figure>
+                                                <img src="assets/images/product3.webp" alt="MSI Gaming" class="css-18b4n58">
+                                            </figure>
                                         </div>
                                     </a>
-                                </div>
-                                <div class="col-sm-6 product-items">
+
                                     <a href="#">
-                                        <div type="subtitle" class="css-1odsp4p">MSI Gaming</div>
-                                        <div type="body" class="css-neo3za">Sức mạnh từ nhà rồng</div>
-                                        <div height="94px" class="css-172u6mc">
-                                            <img src="https://lh3.googleusercontent.com/e_el7oKeE6ThnLxr8otVDYdDjMqed_DcWTqfh2Zw4CrAgWTgSE1UJaQzxo5bgb_oPhdsTpetXsw9w0XMhDOajt-GGaUoD1d_2Q=rw-w300" loading="lazy" height="94px" decoding="async" alt="MSI Gaming" class="css-18b4n58">
+                                        <div class="product-items text-center">
+                                            <div class="title">MSI Gaming</div>
+                                            <small>Sức mạnh từ nhà rồng</small>
+                                            <figure>
+                                                <img src="assets/images/product4.webp" alt="MSI Gaming" class="css-18b4n58">
+                                            </figure>
                                         </div>
                                     </a>
                                 </div>
                             </div>
-
-
-                            <div class="row ">
-                                <div class="col-sm-12 grid-block">
-                                    <a href="#">
-                                        <div class="product-items">
-                                            <div type="subtitle" class="css-1odsp4p">MSI Gaming</div>
-                                            <div type="body" class="css-neo3za">Sức mạnh từ nhà rồng</div>
-                                            <div height="94px" class="css-172u6mc">
-                                                <img src="https://lh3.googleusercontent.com/e_el7oKeE6ThnLxr8otVDYdDjMqed_DcWTqfh2Zw4CrAgWTgSE1UJaQzxo5bgb_oPhdsTpetXsw9w0XMhDOajt-GGaUoD1d_2Q=rw-w300" loading="lazy" height="94px" decoding="async" alt="MSI Gaming" class="css-18b4n58">
-                                            </div>
-                                        </div>
-                                    </a>
-
-                                    <a href="#">
-                                        <div class="product-items">
-                                            <div type="subtitle" class="css-1odsp4p">MSI Gaming</div>
-                                            <div type="body" class="css-neo3za">Sức mạnh từ nhà rồng</div>
-                                            <div height="94px" class="css-172u6mc">
-                                                <img src="https://lh3.googleusercontent.com/e_el7oKeE6ThnLxr8otVDYdDjMqed_DcWTqfh2Zw4CrAgWTgSE1UJaQzxo5bgb_oPhdsTpetXsw9w0XMhDOajt-GGaUoD1d_2Q=rw-w300" loading="lazy" height="94px" decoding="async" alt="MSI Gaming" class="css-18b4n58">
-                                            </div>
-                                        </div>
-                                    </a>
-
-                                    <a href="#">
-                                        <div class="product-items">
-                                            <div type="subtitle" class="css-1odsp4p">MSI Gaming</div>
-                                            <div type="body" class="css-neo3za">Sức mạnh từ nhà rồng</div>
-                                            <div height="94px" class="css-172u6mc">
-                                                <img src="https://lh3.googleusercontent.com/e_el7oKeE6ThnLxr8otVDYdDjMqed_DcWTqfh2Zw4CrAgWTgSE1UJaQzxo5bgb_oPhdsTpetXsw9w0XMhDOajt-GGaUoD1d_2Q=rw-w300" loading="lazy" height="94px" decoding="async" alt="MSI Gaming" class="css-18b4n58">
-                                            </div>
-                                        </div>
-                                    </a>
-
-                                    <a href="#">
-                                        <div class="product-items">
-                                            <div type="subtitle" class="css-1odsp4p">MSI Gaming</div>
-                                            <div type="body" class="css-neo3za">Sức mạnh từ nhà rồng</div>
-                                            <div height="94px" class="css-172u6mc">
-                                                <img src="https://lh3.googleusercontent.com/e_el7oKeE6ThnLxr8otVDYdDjMqed_DcWTqfh2Zw4CrAgWTgSE1UJaQzxo5bgb_oPhdsTpetXsw9w0XMhDOajt-GGaUoD1d_2Q=rw-w300" loading="lazy" height="94px" decoding="async" alt="MSI Gaming" class="css-18b4n58">
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-
-
-                                
-                            </div>
                         </div>
+
                     </div>
                 </div>
             </div>
 
-            <div class="col-lg-6 ">
+            <div class="col-lg-6">
+                
                 <div class="block">
-                    <div class="block-title pl-3">PC - MÀN HÌNH - LINH KIỆN MÁY TÍNH</div>
                     
+                    <div class="row">
+                        
+                        <div class="col-md-12 my-3">
+                            <div class="block-title float-left pl-3">PC - MÀN HÌNH - LINH KIỆN MÁY TÍNH</div>
+                            <a href="#" class="show-more float-right pr-2">Xem tất cả <i class="fas fa-angle-right"></i></a>
+                        </div>   
+
+                        <div class="col-md-12">
+
+                            <div class="d-flex">
+                                <figure class="flex-grow d-none d-md-block overflow-hidden">
+                                    <img src="assets/images/product-b2.webp" alt="" class="w-100 h-100">
+                                </figure>
+                                <div class="flex-fill grid-block">
+                                    <a href="#">
+                                        <div class="product-items text-center">
+                                            <div class="title">MSI Gaming</div>
+                                            <small>Sức mạnh từ nhà rồng</small>
+                                            <figure>
+                                                <img src="assets/images/product1.webp" alt="MSI Gaming" class="css-18b4n58">
+                                            </figure>
+                                        </div>
+                                    </a>
+
+                                    <a href="#">
+                                        <div class="product-items text-center">
+                                            <div class="title">MSI Gaming</div>
+                                            <small>Sức mạnh từ nhà rồng</small>
+                                            <figure>
+                                                <img src="assets/images/product2.webp" alt="MSI Gaming" class="css-18b4n58">
+                                            </figure>
+                                        </div>
+                                    </a>
+
+                                    <a href="#">
+                                        <div class="product-items text-center">
+                                            <div class="title">MSI Gaming</div>
+                                            <small>Sức mạnh từ nhà rồng</small>
+                                            <figure>
+                                                <img src="assets/images/product3.webp" alt="MSI Gaming" class="css-18b4n58">
+                                            </figure>
+                                        </div>
+                                    </a>
+
+                                    <a href="#">
+                                        <div class="product-items text-center">
+                                            <div class="title">MSI Gaming</div>
+                                            <small>Sức mạnh từ nhà rồng</small>
+                                            <figure>
+                                                <img src="assets/images/product4.webp" alt="MSI Gaming" class="css-18b4n58">
+                                            </figure>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
             </div>
-
         </div>
     </div>
     <!-- END PRODUCT -->
