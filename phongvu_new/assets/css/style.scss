@@ -103,7 +103,6 @@ header{
 /*PRODUCT*/
 .promo-product{
 	background-image: url('../images/bg/promo1.png');
-
 	border-radius: 8px;
 
 	.nav-pills{
@@ -154,8 +153,6 @@ header{
 	}
 
 	.countdown{
-		/*width: 45px;
-	    height: 45px;*/
 	    padding: 8px;
 	    font-size: 20px;
 	    align-items: center;
@@ -176,6 +173,7 @@ header{
     		border-radius: 0.5rem;
 
     		figure{
+    			margin-bottom: .5rem;
     			figcaption{
 	    			font-size: 12px;
 	    			color: rgb(67, 70, 87);
@@ -184,17 +182,7 @@ header{
 					-webkit-box-orient: vertical;
 					-webkit-line-clamp: 2;
 	    		}
-	    		.promo-price{
-	    			font-size: 15px;
-	    			color: rgb(20, 53, 195);
-	    			font-weight: 700;	
-	    		}
-	    		.old-price{
-	    			font-size: 12px;
-
-	    			.price{color: rgb(130, 134, 158);text-decoration: line-through;}
-	    			.rate{color: rgb(20, 53, 195);}
-	    		}
+	    		
 	    		img{
 	    			/*width: 100%;
 				    height: 100%;
@@ -203,7 +191,17 @@ header{
 	    		}
     		}
     		
+    		.promo-price{
+    			font-size: 15px;
+    			color: rgb(20, 53, 195);
+    			font-weight: 700;	
+    		}
+    		.old-price{
+    			font-size: 12px;
 
+    			.price{color: rgb(130, 134, 158);text-decoration: line-through;}
+    			.rate{color: rgb(20, 53, 195);}
+    		}
 		}
 	}
 }
@@ -233,16 +231,13 @@ header{
 			img{
 				/*height: 145px;*/
 				/*object-fit: fill;*/
-				transition: transform 0.3s ease 0s;
 				@extend .item-transform;
 			}
 		}
 		.subtitle{
 			color: rgb(51, 51, 51);
 			font-weight: 600;
-
-		}
-		
+		}	
 	}
 }
 
@@ -278,6 +273,63 @@ header{
 	   	}
 	}
 	
+}
+
+
+.best-sell{
+	a{text-decoration: none;}
+	background-image: url('../images/bg-best-sell.png');
+    border-radius: 8px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+
+    .block-title{
+    	border-left: solid 3.5px #fff;
+    	color: #fff;
+    }
+    .best-sell-item{
+    	@extend .bg-white;
+    	border-radius: 8px;
+    	padding: 1rem;
+    	figure{
+			margin-bottom: .5rem;
+			
+			img{
+				/*height: 145px;*/
+				/*object-fit: fill;*/
+				transition: transform 0.3s ease 0s;
+				@extend .item-transform;
+			}
+
+			figcaption{
+    			font-size: 12px;
+    			color: rgb(67, 70, 87);
+    			overflow: hidden;
+				display: -webkit-box;
+				-webkit-box-orient: vertical;
+				-webkit-line-clamp: 2;
+    		}
+		}
+
+		.promo-price{
+			font-size: 15px;
+			color: rgb(20, 53, 195);
+			font-weight: 700;	
+		}
+		.old-price{
+			font-size: 12px;
+
+			.price{color: rgb(130, 134, 158);text-decoration: line-through;}
+			.rate{color: rgb(20, 53, 195);}
+		}
+
+		.subtitle{
+			color: rgb(51, 51, 51);
+			font-weight: 600;
+		}
+
+    }
 }
 /*END PRODUCT*/
 

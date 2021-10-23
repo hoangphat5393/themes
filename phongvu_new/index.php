@@ -254,13 +254,12 @@
                                                     <figure>
                                                         <img class="w-100" src="assets/images/promo-p1.webp" alt="">
                                                         <figcaption>Tai Nghe Bluettooth LG HBS-FN4 (Trắng)</figcaption>
-                                                        
-                                                        <div class="promo-price">2.099.000 ₫</div>
-                                                        <div class="old-price">
-                                                            <span class="price">2.790.000 ₫</span> 
-                                                            <span class="rate">-24.77%</span>
-                                                        </div>
                                                     </figure>
+                                                    <div class="promo-price">2.099.000 ₫</div>
+                                                    <div class="old-price">
+                                                        <span class="price">2.790.000 ₫</span> 
+                                                        <span class="rate">-24.77%</span>
+                                                    </div>
                                                 </a>
                                             </div>
 
@@ -269,13 +268,12 @@
                                                     <figure>
                                                         <img class="w-100" src="assets/images/promo-p2.webp" alt="">
                                                         <figcaption>Tai Nghe Bluettooth LG HBS-FN4 (Đen)</figcaption>
-                                                        
-                                                        <div class="promo-price">2.099.000 ₫</div>
-                                                        <div class="old-price">
-                                                            <span class="price">2.790.000 ₫</span> 
-                                                            <span class="rate">-24.77%</span>
-                                                        </div>
                                                     </figure>
+                                                    <div class="promo-price">2.099.000 ₫</div>
+                                                    <div class="old-price">
+                                                        <span class="price">2.790.000 ₫</span> 
+                                                        <span class="rate">-24.77%</span>
+                                                    </div>
                                                 </a>
                                             </div>
 
@@ -284,13 +282,12 @@
                                                     <figure>
                                                         <img class="w-100" src="assets/images/promo-p3.webp" alt="">
                                                         <figcaption>Loa Bluetooth LG XBOOMGo PN5 (Xanh Đen)</figcaption>
-                                                        
-                                                        <div class="promo-price">2.099.000 ₫</div>
-                                                        <div class="old-price">
-                                                            <span class="price">2.790.000 ₫</span> 
-                                                            <span class="rate">-24.77%</span>
-                                                        </div>
                                                     </figure>
+                                                    <div class="promo-price">2.099.000 ₫</div>
+                                                    <div class="old-price">
+                                                        <span class="price">2.790.000 ₫</span> 
+                                                        <span class="rate">-24.77%</span>
+                                                    </div>
                                                 </a>
                                             </div>
 
@@ -299,13 +296,12 @@
                                                     <figure>
                                                         <img class="w-100" src="assets/images/promo-p4.webp" alt="">
                                                         <figcaption><a href="">Loa Bluetooth LG XBOOMGo PL2W (Trắng)</a></figcaption>
-                                                        
-                                                        <div class="promo-price">2.099.000 ₫</div>
-                                                        <div class="old-price">
-                                                            <span class="price">2.790.000 ₫</span> 
-                                                            <span class="rate">-24.77%</span>
-                                                        </div>
                                                     </figure>
+                                                    <div class="promo-price">2.099.000 ₫</div>
+                                                    <div class="old-price">
+                                                        <span class="price">2.790.000 ₫</span> 
+                                                        <span class="rate">-24.77%</span>
+                                                    </div>
                                                 </a>
                                             </div>
                                         </div>
@@ -538,6 +534,61 @@
     </div>
     <!-- END PRODUCT -->
 
+    <!-- TOP SELL/MONTH -->
+    <div class="container mt-4 mb-3">
+
+        <div class="row">
+
+            <div class="col-lg-12">
+
+                <div class="block best-sell py-3">
+                    <div class="block-title pl-3">Bán chạy trong tháng</div>
+
+                    <div class="best-slide px-2">
+                        <div class="owl-three owl-carousel owl-theme mt-3">
+
+                            <div class="item best-sell-item">
+                                <a href="#" title="">
+                                    <figure>
+                                        <div class="overflow-hidden">
+                                            <img class="w-100" src="assets/images/best-sell1.webp" alt="">
+                                        </div>
+                                        <figcaption>Tai Nghe Bluettooth LG HBS-FN4 (Đen)</figcaption>
+                                    </figure>
+                                    <div class="promo-price">2.099.000 ₫</div>
+                                    <div class="old-price">
+                                        <span class="price">2.790.000 ₫</span> 
+                                        <span class="rate">-24.77%</span>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="item best-sell-item">
+                                <a href="#" title="">
+                                    <figure>
+                                        <div class="overflow-hidden">
+                                            <img class="w-100" src="assets/images/best-sell2.webp" alt="">
+                                        </div>
+                                        <figcaption>Tai Nghe Bluettooth LG HBS-FN4 (Đen)</figcaption>
+                                    </figure>
+                                    <div class="promo-price">2.099.000 ₫</div>
+                                    <div class="old-price">
+                                        <span class="price">2.790.000 ₫</span> 
+                                        <span class="rate">-24.77%</span>
+                                    </div>
+                                </a>
+                            </div>
+
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- END TOP SELL/MONTH -->
+
 
 
     <footer class="footer-area">
@@ -623,6 +674,30 @@
                 },
                 1000: {
                     items: 4,
+                    nav: false,
+                    // loop:false
+                }
+            }
+        });
+
+        var owl2 = $('.owl-three');
+        owl2.owlCarousel({
+            loop: true,
+            margin: 10,
+            autoplay: false,
+            dots: false,
+            responsiveClass: true,
+            responsive: {
+                0: {
+                    items: 2,
+                    nav: false
+                },
+                600: {
+                    items: 3,
+                    nav: false
+                },
+                1000: {
+                    items: 5,
                     nav: false,
                     // loop:false
                 }
