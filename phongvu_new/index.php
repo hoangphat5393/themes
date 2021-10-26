@@ -68,21 +68,50 @@
     <!-- END HEADER -->
 
     <!-- MENU -->
+    <nav class="navbar-light sticky-top main-menu">
+        <div class="container px-0 py-3">
 
-    <!-- <nav class="navbar sticky-top navbar-expand-lg navbar-dark main-menu py-1 custom-toggler"> -->
-    <nav class="navbar-light sticky-top main-menu py-1 custom-toggler">
-        <div class="container">
-            <!-- <button class="custom-toggler navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span> Menu
-            </button> -->
+            <div class="d-md-flex align-items-center">
 
-            <div class="d-flex justify-content-between align-items-center py-3">
-
-                <div class="logo">
-                    <img src="assets/images/logo-full.svg" alt="" class="w-100" height="35px">
+                <div class="order-1 logo">
+                    <a href="index.php"><img src="assets/images/logo-full.svg" alt="" class="w-100" height="35px"></a>
                 </div>
 
-                <div class="dropdown drop-menu-top d-none px-3">
+                <div class="order-3 flex-fill px-3">
+                    <div class="search-block">
+                        <form action="search.php" class="my-2 my-lg-0">
+                            <div class="form-group">
+                                <input class="form-control input-search mr-sm-2 w-100" type="search" placeholder="Tìm kiếm" name=q value="">
+                                <button type="submit" class="btn-search  my-sm-0"><i class="fa fa-search fa-fw"></i></button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="order-4 d-flex text-center nav-title">
+                    <a href="#" class="">
+                        <div><i class="far fa-2x fa-tags"></i></div>
+                        Khuyến mãi
+                    </a>
+                    <a href="#" class="">
+                        <i class="far fa-2x fa-receipt"></i><br>
+                        Đơn hàng
+                    </a>
+                    <a href="#" class="">
+                        <i class="far fa-2x fa-bell"></i><br>
+                        Thông báo
+                    </a>
+                    <a href="#" class="">
+                        <i class="far fa-2x fa-user"></i><br>
+                        Đăng nhập
+                    </a>
+                    <a href="#" class="">
+                        <i class="far fa-2x fa-shopping-cart"></i><br>
+                        Giỏ hàng
+                    </a>
+                </div>
+
+                <div class="order-2 dropdown drop-menu-top px-3">
                     <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         <span class="navbar-toggler-icon"></span> Danh mục sản phẩm
                     </button>
@@ -112,40 +141,6 @@
                             Linh kiện máy tính
                         </a>
                     </div>
-                </div>
-
-                <div class="flex-fill px-3">
-                    <div class="search-block">
-                        <form action="search.php" class="my-2 my-lg-0">
-                            <div class="form-group">
-                                <input class="form-control input-search mr-sm-2 w-100" type="search" placeholder="Tìm kiếm" name=q value="">
-                                <button type="submit" class="btn-search my-2 my-sm-0"><i class="fa fa-search fa-fw"></i></button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-
-                <div class="d-flex text-center nav-title">
-                    <a href="#" class="">
-                        <div><i class="far fa-2x fa-tags"></i></div>
-                        Khuyến mãi
-                    </a>
-                    <a href="#" class="">
-                        <i class="far fa-2x fa-receipt"></i><br>
-                        Đơn hàng
-                    </a>
-                    <a href="#" class="">
-                        <i class="far fa-2x fa-bell"></i><br>
-                        Thông báo
-                    </a>
-                    <a href="#" class="">
-                        <i class="far fa-2x fa-user"></i><br>
-                        Đăng nhập
-                    </a>
-                    <a href="#" class="">
-                        <i class="far fa-2x fa-shopping-cart"></i><br>
-                        Giỏ hàng
-                    </a>
                 </div>
 
             </div>
@@ -1293,7 +1288,7 @@
         owl2.owlCarousel({
             loop: true,
             margin: 10,
-            autoplay: false,
+            autoplay: true,
             dots: false,
             responsiveClass: true,
             responsive: {
@@ -1311,22 +1306,6 @@
                     // loop:false
                 }
             }
-        });
-
-        (function($) {
-            $(function() {
-                $("#scroller").simplyScroll({
-                    orientation: 'vertical',
-                    customClass: 'vert'
-                });
-            });
-        })(jQuery);
-
-        $().ready(function(e) {
-            $('.list-video').change(function() {
-                var url = 'https://www.youtube.com/embed/' + $(this).val();
-                $('#ajax_video iframe').attr('src', url);
-            })
         });
     </script>
 
