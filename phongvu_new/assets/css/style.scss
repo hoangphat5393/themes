@@ -544,6 +544,61 @@ header{
 	}
 }
 
+/*PRODUCT DETAIL*/
+.product-detail{
+
+	.product-sumary{
+		a{text-decoration: none;}
+		@extend .bg-white;
+	    border-radius: 8px;
+
+	    h1{
+	    	font-size: 1.25rem;
+	    	font-weight: 500;
+	    	line-height: 1.33;
+	    }
+    }
+
+    .product-policy{
+		@extend .bg-white;
+		border-radius: 8px;
+		line-height: 24px;
+
+		.benefit{
+			color: #53c305;
+			font-size: .875rem;
+			padding-bottom: .75rem;
+			border-bottom: 1px dashed #e0e0e0;
+		}
+		.subtitle{
+			margin-top: 1rem;
+			margin-bottom: .5rem;
+			font-size: 15px;
+    		font-weight: 600;
+    		line-height: 24px;
+		}
+		
+	}
+
+	.product-content{
+		a{text-decoration: none;}
+		@extend .bg-white;
+	    border-radius: 8px;
+
+	    h2{
+	    	font-size: 1rem;
+	    	line-height: 1.33;
+	    }
+	}
+	.product-feature{
+		@extend .bg-white;
+	    border-radius: 8px;
+	}
+}
+
+
+/*END PRODUCT DETAIL*/
+
 /*FOOTER*/
 footer{
 	.footer-cat{@extend .bg-white;}

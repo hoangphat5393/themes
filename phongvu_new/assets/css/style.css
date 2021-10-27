@@ -28,7 +28,7 @@ table.vcenter > tbody > tr > td {
   .item-transform:hover, .promo-product .tab-content .promo-item figure img:hover, .brand .brand-item figure img:hover, .main-product figure img:hover, .best-sell .best-sell-item figure img:hover, .product-cus .product-cus-item figure img:hover {
     transform: scale(1.05); }
 
-.bg-white, .main-menu, .promo-product .tab-content .promo-item, .brand, .main-product .block, .main-product .grid-block .product-items, .best-sell .best-sell-item, .product-cus .product-cus-item, .fliter, footer .footer-cat {
+.bg-white, .main-menu, .promo-product .tab-content .promo-item, .brand, .main-product .block, .main-product .grid-block .product-items, .best-sell .best-sell-item, .product-cus .product-cus-item, .fliter, .product-detail .product-sumary, .product-detail .product-policy, .product-detail .product-content, .product-detail .product-feature, footer .footer-cat {
   background-color: #fff; }
 
 header {
@@ -425,6 +425,40 @@ header a {
       border: 1px solid #1435c3;
       color: #1435c3; }
 
+/*PRODUCT DETAIL*/
+.product-detail .product-sumary {
+  border-radius: 8px; }
+  .product-detail .product-sumary a {
+    text-decoration: none; }
+  .product-detail .product-sumary h1 {
+    font-size: 1.25rem;
+    font-weight: 500;
+    line-height: 1.33; }
+.product-detail .product-policy {
+  border-radius: 8px;
+  line-height: 24px; }
+  .product-detail .product-policy .benefit {
+    color: #53c305;
+    font-size: .875rem;
+    padding-bottom: .75rem;
+    border-bottom: 1px dashed #e0e0e0; }
+  .product-detail .product-policy .subtitle {
+    margin-top: 1rem;
+    margin-bottom: .5rem;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 24px; }
+.product-detail .product-content {
+  border-radius: 8px; }
+  .product-detail .product-content a {
+    text-decoration: none; }
+  .product-detail .product-content h2 {
+    font-size: 1rem;
+    line-height: 1.33; }
+.product-detail .product-feature {
+  border-radius: 8px; }
+
+/*END PRODUCT DETAIL*/
 /*FOOTER*/
 footer {
   border-top: solid 3px #1435C3;
