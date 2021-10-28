@@ -189,6 +189,19 @@ header a {
       display: none !important; } }
 
 /*END SLIDER*/
+.promo-price {
+  font-size: 15px;
+  color: #1435c3;
+  font-weight: 700; }
+
+.old-price {
+  font-size: 12px; }
+  .old-price .price {
+    color: #82869e;
+    text-decoration: line-through; }
+  .old-price .rate {
+    color: #1435c3; }
+
 /*PRODUCT*/
 .promo-product {
   background-image: url("../images/bg/promo1.png");
@@ -254,17 +267,6 @@ header a {
     			/*width: 100%;
 			    height: 100%;
 			    object-fit: contain;*/ }
-    .promo-product .tab-content .promo-item .promo-price {
-      font-size: 15px;
-      color: #1435c3;
-      font-weight: 700; }
-    .promo-product .tab-content .promo-item .old-price {
-      font-size: 12px; }
-      .promo-product .tab-content .promo-item .old-price .price {
-        color: #82869e;
-        text-decoration: line-through; }
-      .promo-product .tab-content .promo-item .old-price .rate {
-        color: #1435c3; }
 
 .block .block-title {
   border-left: solid 3.5px #1B1D29;
@@ -345,17 +347,6 @@ header a {
         display: -webkit-box;
         -webkit-box-orient: vertical;
         -webkit-line-clamp: 2; }
-    .best-sell .best-sell-item .promo-price {
-      font-size: 15px;
-      color: #1435c3;
-      font-weight: 700; }
-    .best-sell .best-sell-item .old-price {
-      font-size: 12px; }
-      .best-sell .best-sell-item .old-price .price {
-        color: #82869e;
-        text-decoration: line-through; }
-      .best-sell .best-sell-item .old-price .rate {
-        color: #1435c3; }
 
 /*END PRODUCT*/
 /*PRODUCT CUSTOMER*/
@@ -378,17 +369,6 @@ header a {
         display: -webkit-box;
         -webkit-box-orient: vertical;
         -webkit-line-clamp: 2; }
-    .product-cus .product-cus-item .promo-price {
-      font-size: 15px;
-      color: #1435c3;
-      font-weight: 700; }
-    .product-cus .product-cus-item .old-price {
-      font-size: 12px; }
-      .product-cus .product-cus-item .old-price .price {
-        color: #82869e;
-        text-decoration: line-through; }
-      .product-cus .product-cus-item .old-price .rate {
-        color: #1435c3; }
 
 /*END PRODUCT CUSTOMER*/
 .fliter .fliter-select {
@@ -434,9 +414,27 @@ header a {
     font-size: 1.25rem;
     font-weight: 500;
     line-height: 1.33; }
+  .product-detail .product-sumary .promo-price {
+    font-size: 1.25rem; }
+  .product-detail .product-sumary .old-price {
+    font-size: .75rem; }
+  .product-detail .product-sumary .byproduct {
+    background-color: #fbfbfd;
+    border: 1px solid #e4e5f0;
+    box-sizing: border-box;
+    border-radius: 8px;
+    padding: 10px;
+    margin-top: 8px;
+    font-size: .75rem; }
+  .product-detail .product-sumary .promo-block {
+    border-top: 1px dashed #e0e0e0;
+    margin-top: 1rem;
+    padding-top: .75rem;
+    font-size: .875rem; }
 .product-detail .product-policy {
   border-radius: 8px;
-  line-height: 24px; }
+  line-height: 24px;
+  font-size: .875rem; }
   .product-detail .product-policy .benefit {
     color: #53c305;
     font-size: .875rem;

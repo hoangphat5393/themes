@@ -230,6 +230,17 @@ header{
 /*END SLIDER*/
  
 
+.promo-price{
+	font-size: 15px;
+	color: rgb(20, 53, 195);
+	font-weight: 700;	
+}
+.old-price{
+	font-size: 12px;
+	.price{color: rgb(130, 134, 158);text-decoration: line-through;}
+	.rate{color: rgb(20, 53, 195);}
+}
+
 /*PRODUCT*/
 .promo-product{
 	background-image: url('../images/bg/promo1.png');
@@ -320,18 +331,7 @@ header{
 				    @extend .item-transform;
 	    		}
     		}
-    		
-    		.promo-price{
-    			font-size: 15px;
-    			color: rgb(20, 53, 195);
-    			font-weight: 700;	
-    		}
-    		.old-price{
-    			font-size: 12px;
 
-    			.price{color: rgb(130, 134, 158);text-decoration: line-through;}
-    			.rate{color: rgb(20, 53, 195);}
-    		}
 		}
 	}
 }
@@ -440,16 +440,6 @@ header{
     		}
 		}
 
-		.promo-price{
-			font-size: 15px;
-			color: rgb(20, 53, 195);
-			font-weight: 700;	
-		}
-		.old-price{
-			font-size: 12px;
-			.price{color: rgb(130, 134, 158);text-decoration: line-through;}
-			.rate{color: rgb(20, 53, 195);}
-		}
     }
 }
 /*END PRODUCT*/
@@ -481,17 +471,6 @@ header{
 				-webkit-box-orient: vertical;
 				-webkit-line-clamp: 2;
     		}
-		}
-
-		.promo-price{
-			font-size: 15px;
-			color: rgb(20, 53, 195);
-			font-weight: 700;	
-		}
-		.old-price{
-			font-size: 12px;
-			.price{color: rgb(130, 134, 158);text-decoration: line-through;}
-			.rate{color: rgb(20, 53, 195);}
 		}
     }
 }
@@ -557,12 +536,33 @@ header{
 	    	font-weight: 500;
 	    	line-height: 1.33;
 	    }
+
+	    .promo-price{font-size: 1.25rem;}
+	    .old-price{font-size: .75rem;}
+
+	    .byproduct{
+	    	background-color: #fbfbfd;
+		    border: 1px solid #e4e5f0;
+		    box-sizing: border-box;
+		    border-radius: 8px;
+		    padding: 10px;
+		    margin-top: 8px;
+		    font-size: .75rem;
+	    }
+
+	    .promo-block{
+	    	border-top: 1px dashed #e0e0e0;
+	    	margin-top: 1rem;
+	    	padding-top: .75rem;
+	    	font-size: .875rem;
+	    }
     }
 
     .product-policy{
 		@extend .bg-white;
 		border-radius: 8px;
 		line-height: 24px;
+		font-size: .875rem;
 
 		.benefit{
 			color: #53c305;

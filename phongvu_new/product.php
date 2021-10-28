@@ -160,18 +160,41 @@
                             <img class="w-100" src="assets/images/product-dt1.webp" alt='Laptop MSI Leopard GL65 10SDK - 242VN ( 15.6" Full HD/ 144Hz/Intel Core i7-10750H/16GB/512GB SSD/NVIDIA GeForce GTX 1660Ti/Win 10 Home SL)'>
                         </div>
                         <div class="col-md-7">
-                            <h1 class="product-name">
-                                <!-- <span>Hàng sắp về</span> -->
-                                Laptop MSI Leopard GL65 10SDK - 242VN ( 15.6" Full HD/ 144Hz/Intel Core i7-10750H/16GB/512GB SSD/NVIDIA GeForce GTX 1660Ti/Win 10 Home SL)
-                            </h1>
-                            <div type="caption" color="textSecondary" style="font-size:14px;margin-top:-4px" class="css-1099qmx">
-                                Thương hiệu 
-                                <a target="_self" href="/msi-brand.msi" class="css-cbrxda">
-                                    <span class="css-n67qkj">MSI</span>
-                                </a> | SKU: <!-- -->200700409
+                            <div class="block px-3">
+                                <h1 class="product-name">
+                                    <!-- <span>Hàng sắp về</span> -->
+                                    Laptop MSI Leopard GL65 10SDK - 242VN ( 15.6" Full HD/ 144Hz/Intel Core i7-10750H/16GB/512GB SSD/NVIDIA GeForce GTX 1660Ti/Win 10 Home SL)
+                                </h1>
+                                <div type="caption" color="textSecondary" style="font-size:14px;margin-top:-4px" class="css-1099qmx">
+                                    Thương hiệu 
+                                    <a target="_self" href="/msi-brand.msi" class="css-cbrxda">
+                                        <span class="css-n67qkj">MSI</span>
+                                    </a> | SKU: <!-- -->200700409
+                                </div>
+
+                                <div class="promo-price mt-3">30.490.000 ₫</div>
+                                <div class="old-price mb-3"><span class="price">33.490.000 ₫</span></div>
+
+                                <strong>Bạn sẽ nhận được</strong>
+                                <div class="byproduct">
+                                    <div class="d-flex align-items-center mb-2">
+                                        <img src="assets/images/byproduct.webp" alt="bag" width="30">
+                                        x1 Ba lô MSI
+                                    </div>
+                                    &ensp;<i class="fas fa-gift-card "></i> Tặng x1 <span class="text-red">Mã giảm 150.000 khi mua màn hình từ 23 inch trở lên</span>
+                                </div>
+
+                                <div class="promo-block">
+                                    <strong>Khuyến mãi liên quan</strong>
+                                    <ul> 
+                                        <li> 
+                                            Nhập mã <strong>PV300</strong> giảm thêm 3% tối đa 
+                                            <span class="text-red">300.000 đ</span > 
+                                            khi thanh toán qua VNPAY-QR. <a href="#" target="blank " class="css - 1 ty6934 ">Xem chi tiết</a>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
-                            <div>30.490.000 ₫</div>
-                            <div>33.490.000 ₫</div>
                         </div>
                     </div>
                 </div>
@@ -202,22 +225,83 @@
                 <div class="block product-content py-3">
                     <div class="block-title pl-3">Mô tả sản phẩm</div>
                     
-                    <div class="product-info p-3">
-                        <h2>
-                            <strong>Máy tính xách tay/
-                            <a href="https://phongvu.vn/may-tinh-xach-tay-laptop-msi-leopard-gl65-10sdk-242vn-i7-10750h-den-s200700409.html">
-                                Laptop MSI Leopard GL65 10SDK-242VN
-                            </a> (i7-10750H) (Đen)
-                            </strong>
-                        </h2>
+                    <h2 class="p-3">
+                        <strong>Máy tính xách tay/
+                        <a href="https://phongvu.vn/may-tinh-xach-tay-laptop-msi-leopard-gl65-10sdk-242vn-i7-10750h-den-s200700409.html">
+                            Laptop MSI Leopard GL65 10SDK-242VN
+                        </a> (i7-10750H) (Đen)
+                        </strong>
+                    </h2>
+                    <div class="prouct-info px-3">
+                        <img src="assets/images/product-content1.png" alt="" class="img-fluid">
+                        <br><br>
+                        <p><big><strong>Thiết kế mạnh mẽ, thời thượng</strong></big></p>
+                        <p>Với phong cách thiết kế được cải tiến cùng với gam màu đen, Laptop MSI Leopard GL65 10SDK-242VN mặc dù không hầm hố nhưng vẻ ngoài vẫn hiện lên một cách sang trọng, mạnh mẽ.Các đường viền được gia công bo vuông cùng với dải tản nhiệt rộng, thoáng, thiết kế tỉ mỉ khiến chiếc laptop gaming của bạn không chỉ tản nhiệt tốt mà còn hết sức thời trang.</p>
+                        <img src="assets/images/product-content2.png" alt="" class="img-fluid">
+                        <p><big><strong>Cấu hình siêu khủng nhờ chip Intel Core i7 thế hệ thứ 10</strong></big></p>
+                        <p>Laptop MSI Leopard GL65 10SDK-242VN có khả năng xử lý các tác vụ đồ họa như chỉnh sửa ảnh, video hay chơi các tựa game Liên Minh Huyền Thoại, các tựa game nhập vai một cách trơn tru, mượt mà. Với chip Intel Core i7 thế hệ thứ 10 chính là thế hệ mới nhất,MSI Leopard GL65 10SDK-242VN cho hiệu năng cực đỉnh nhờ lõi 12 luồng, bộ nhớ đệm 12MB và tốc độ xung nhịp tối đa lên tới 5.00 GHz.</p>
+                        <img src="assets/images/product-content3.png" alt="" class="img-fluid">
                     </div>
                 </div>
             </div>
 
             <div class="col-lg-4">
                 <div class="block product-feature py-3">
-                    <div class="block-title pl-3">Thông số kĩ thuật</div>
-                    
+                    <div class="block-title pl-3 mb-3">Thông số kĩ thuật</div>
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th class="text-nowrap">Thương hiệu</th>
+                                <td scope="col">MSI</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Bảo hành</td>
+                                <td>24</td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">Thông tin chung</td>
+                            </tr>
+                            <tr>
+                                <td>Màu sắc</td>
+                                <td>Đen</td>
+                            </tr>
+                            <tr>
+                                <td>Mô tả bảo hành</td>
+                                <td>Bảo hành 12 tháng với pin và phụ kiện</td>
+                            </tr>
+                            <tr>
+                                <td>Series laptop</td>
+                                <td>GL Series</td>
+                            </tr>
+                            <tr>
+                                <td>Part-number</td>
+                                <td>242VN</td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">Cấu hình chi tiết</td>
+                            </tr>
+                            <tr>
+                                <td>Thế hệ CPU</td>
+                                <td>Core i7 , Intel Core thế hệ thứ 10</td>
+                            </tr>
+                            <tr>
+                                <td>CPU</td>
+                                <td>Intel Core i7-10750H ( 2.6 GHz - 5.0 GHz / 12MB / 6 nhân, 12 luồng )</td>
+                            </tr>
+                            <tr>
+                                <td>Chip đồ họa</td>
+                                <td>NVIDIA GeForce GTX 1660Ti 6GB GDDR6 / Intel UHD Graphics</td>
+                            </tr>
+                            <tr>
+                                <td>RAM</td>
+                                <td>2 x 8GB DDR4 2666MHz ( 2 Khe cắm / Hỗ trợ tối đa 64GB )</td>
+                            </tr>
+
+
+                        </tbody>
+                    </table>
                     
                 </div>
             </div>
