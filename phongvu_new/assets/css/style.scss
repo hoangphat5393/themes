@@ -50,10 +50,6 @@ header{
 	.dropdown-menu{
 		.dropdown-item{
 			@extend .cat-link-style;
-			/*overflow: hidden;*/
-			/*display: -webkit-box;
-			-webkit-box-orient: vertical;
-			-webkit-line-clamp: 1;*/
 		}
 	}
 	.drop-menu-top{display: none;}
@@ -318,6 +314,7 @@ header{
     			figcaption{
 	    			font-size: 12px;
 	    			color: rgb(67, 70, 87);
+	    			height: 40px;
 	    			overflow: hidden;
 					display: -webkit-box;
 					-webkit-box-orient: vertical;
@@ -433,6 +430,7 @@ header{
 			figcaption{
     			font-size: 12px;
     			color: rgb(67, 70, 87);
+    			height: 40px;
     			overflow: hidden;
 				display: -webkit-box;
 				-webkit-box-orient: vertical;
@@ -466,6 +464,7 @@ header{
 			figcaption{
     			font-size: 12px;
     			color: rgb(67, 70, 87);
+    			height: 40px;
     			overflow: hidden;
 				display: -webkit-box;
 				-webkit-box-orient: vertical;
@@ -595,9 +594,89 @@ header{
 	    border-radius: 8px;
 	}
 }
-
-
 /*END PRODUCT DETAIL*/
+
+/*PROMO CAT*/
+.menu-schollpy{
+	background-color: rgb(241, 240, 241);
+	padding: 0 1rem;
+	.nav-item{
+		.nav-link{
+			color: #333;
+			font-weight: 600;
+			padding: auto 10px;
+	    	height: 40px;
+	    	font-size: 13px;
+	    	border-radius: 0;
+			&:hover{
+		    	background-color: rgb(220, 220, 220) !important;;
+				border-bottom: 2px solid #999!important;
+		    	color: var(--nvabar_hover_text_color)!important;
+			}
+		}
+
+	}
+}
+.promo-page{
+	@extend .bg-white;
+
+	
+}
+
+.promo-cat-p{
+	a{text-decoration: none;}
+	@extend .bg-white;
+
+	.promo-item{
+		a{
+			display: block;
+			border-radius: 5px!important;
+			box-sizing: border-box;
+			padding: .75rem;
+			margin-bottom: 1rem;
+			color: #000;
+			&:hover{
+				box-shadow: 0 0 10px rgba(0,0,0,0.4);
+				-moz-box-shadow: 0 0 10px rgba(0,0,0,0.4);
+				-webkit-box-shadow: 0 0 10px rgba(0,0,0,0.4);
+				-o-box-shadow: 0 0 10px rgba(0,0,0,0.4);
+			}
+    		
+		}
+		figure{
+			margin-bottom: 1rem;
+			figcaption{
+    			font-size: 14px;
+    			color: rgb(51, 51, 51);;
+    			height: 40px;
+    			overflow: hidden;
+				display: -webkit-box;
+				-webkit-box-orient: vertical;
+				-webkit-line-clamp: 2;
+    		}
+		}
+		.promo-price{
+			font-size: 1rem;
+			color: #000;
+		}
+		.old-price{
+			font-size: 12px;
+			.price{color: #000;}
+			.rate{color: #000;}
+		}
+	}
+}
+
+.promo-page-2{
+	background-image: url('../images/bg/desktop-bg.jpg');
+	background-size: cover!important;
+    background-repeat: no-repeat!important;
+
+    .promo-product .nav-pills .nav-item .nav-link{
+		height: auto!important;
+	}
+}
+/*END PROMO CAT*/
 
 /*FOOTER*/
 footer{

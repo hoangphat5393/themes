@@ -28,7 +28,7 @@ table.vcenter > tbody > tr > td {
   .item-transform:hover, .promo-product .tab-content .promo-item figure img:hover, .brand .brand-item figure img:hover, .main-product figure img:hover, .best-sell .best-sell-item figure img:hover, .product-cus .product-cus-item figure img:hover {
     transform: scale(1.05); }
 
-.bg-white, .main-menu, .promo-product .tab-content .promo-item, .brand, .main-product .block, .main-product .grid-block .product-items, .best-sell .best-sell-item, .product-cus .product-cus-item, .fliter, .product-detail .product-sumary, .product-detail .product-policy, .product-detail .product-content, .product-detail .product-feature, footer .footer-cat {
+.bg-white, .main-menu, .promo-product .tab-content .promo-item, .brand, .main-product .block, .main-product .grid-block .product-items, .best-sell .best-sell-item, .product-cus .product-cus-item, .fliter, .product-detail .product-sumary, .product-detail .product-policy, .product-detail .product-content, .product-detail .product-feature, .promo-page, .promo-cat-p, footer .footer-cat {
   background-color: #fff; }
 
 header {
@@ -48,11 +48,6 @@ header {
       	display: none!important;
       }
   }*/ }
-  .main-menu .dropdown-menu .dropdown-item {
-    /*overflow: hidden;*/
-    /*display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 1;*/ }
   .main-menu .drop-menu-top {
     display: none; }
   .main-menu .nav-title {
@@ -259,6 +254,7 @@ header a {
       .promo-product .tab-content .promo-item figure figcaption {
         font-size: 12px;
         color: #434657;
+        height: 40px;
         overflow: hidden;
         display: -webkit-box;
         -webkit-box-orient: vertical;
@@ -343,6 +339,7 @@ header a {
       .best-sell .best-sell-item figure figcaption {
         font-size: 12px;
         color: #434657;
+        height: 40px;
         overflow: hidden;
         display: -webkit-box;
         -webkit-box-orient: vertical;
@@ -365,6 +362,7 @@ header a {
       .product-cus .product-cus-item figure figcaption {
         font-size: 12px;
         color: #434657;
+        height: 40px;
         overflow: hidden;
         display: -webkit-box;
         -webkit-box-orient: vertical;
@@ -457,6 +455,64 @@ header a {
   border-radius: 8px; }
 
 /*END PRODUCT DETAIL*/
+/*PROMO CAT*/
+.menu-schollpy {
+  background-color: #f1f0f1;
+  padding: 0 1rem; }
+  .menu-schollpy .nav-item .nav-link {
+    color: #333;
+    font-weight: 600;
+    padding: auto 10px;
+    height: 40px;
+    font-size: 13px;
+    border-radius: 0; }
+    .menu-schollpy .nav-item .nav-link:hover {
+      background-color: gainsboro !important;
+      border-bottom: 2px solid #999 !important;
+      color: var(--nvabar_hover_text_color) !important; }
+
+.promo-cat-p a {
+  text-decoration: none; }
+.promo-cat-p .promo-item a {
+  display: block;
+  border-radius: 5px !important;
+  box-sizing: border-box;
+  padding: .75rem;
+  margin-bottom: 1rem;
+  color: #000; }
+  .promo-cat-p .promo-item a:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    -o-box-shadow: 0 0 10px rgba(0, 0, 0, 0.4); }
+.promo-cat-p .promo-item figure {
+  margin-bottom: 1rem; }
+  .promo-cat-p .promo-item figure figcaption {
+    font-size: 14px;
+    color: #333333;
+    height: 40px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2; }
+.promo-cat-p .promo-item .promo-price {
+  font-size: 1rem;
+  color: #000; }
+.promo-cat-p .promo-item .old-price {
+  font-size: 12px; }
+  .promo-cat-p .promo-item .old-price .price {
+    color: #000; }
+  .promo-cat-p .promo-item .old-price .rate {
+    color: #000; }
+
+.promo-page-2 {
+  background-image: url("../images/bg/desktop-bg.jpg");
+  background-size: cover !important;
+  background-repeat: no-repeat !important; }
+  .promo-page-2 .promo-product .nav-pills .nav-item .nav-link {
+    height: auto !important; }
+
+/*END PROMO CAT*/
 /*FOOTER*/
 footer {
   border-top: solid 3px #1435C3;
