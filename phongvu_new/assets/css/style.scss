@@ -276,8 +276,7 @@ header{
 
 			    &.active{
 				    color: #fff;
-				    background: transparent;
-				    
+				    background: transparent;  
 				}
 			}
 		}
@@ -672,11 +671,105 @@ header{
 	background-size: cover!important;
     background-repeat: no-repeat!important;
 
-    .promo-product .nav-pills .nav-item .nav-link{
-		height: auto!important;
-	}
+    .promo-product{
+    	background-image: none;
+    	background: #fff;
+    	border-radius: 0;
+    	.nav-pills .nav-item{
+    		.nav-link{
+				background: #fff;
+				height: 44px;
+				line-height: 30px;
+				font-size: 14px;
+				color: #291B44!important;
+		    	border-bottom: .5px solid #b4c0bb;
+		    	border-radius: 0;
+		    	&.active{
+				    color: #fff;
+				    border-bottom: 2.5px solid #291b44;
+				}
+				&:hover{background: #dcdcdc;}
+	    	}
+
+	    	&:before{
+				content: none;
+			}
+    	}
+    }	
+
 }
 /*END PROMO CAT*/
+
+/*DISCOUNT*/
+.discount-slider{
+	img{
+		border-radius: 8px;
+		 @extend .item-transform;
+	}
+}
+
+.discount-block{
+	a{text-decoration: none;}
+	.discount-item{
+		&.inactive{
+			filter: grayscale(100%);
+    		opacity: 0.6;
+		}
+		margin-bottom: 1rem;
+		border-radius: 8px;
+		box-shadow: 0 0 10px rgba(0,0,0,0.4);
+				-moz-box-shadow: 0 0 10px rgba(0,0,0,0.4);
+				-webkit-box-shadow: 0 0 10px rgba(0,0,0,0.4);
+				-o-box-shadow: 0 0 10px rgba(0,0,0,0.4);
+		box-sizing: border-box;
+
+		figure{
+			font-weight: 600;
+			color: #000;
+			img{
+				border-top-left-radius: 8px;
+				border-top-right-radius: 8px;
+			}	
+		}
+
+		.view-more{
+			background-color: #024dbc;
+			color: #fff;
+		}
+		
+	}
+}
+/*END DISCOUNT*/
+
+
+/*CART*/
+.cart{
+	a{text-decoration: none;}
+	img{
+		border: 1px solid rgb(228, 229, 240);
+	}
+	table tr td{vertical-align: middle;}
+
+	.block-1{
+		img{border-radius: 50%;    object-fit: contain;}
+		i{color: rgb(48, 205, 96);}
+	}
+
+	.checkout{
+		background-color: rgb(20, 53, 195);
+		border-radius: 4px;
+		color: #fff;
+		font-size: 14px;
+		width: 100%;
+		padding: 0.4rem 1rem;
+	}
+
+	.btn-active{
+		background-color: rgb(20, 53, 195)!important;
+		color: #fff;
+	}
+}
+/*END CART*/
 
 /*FOOTER*/
 footer{
@@ -701,3 +794,4 @@ footer{
 	ul li{line-height: 1.5rem;}
 }
 /*END FOOTER*/
+

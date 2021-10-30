@@ -150,95 +150,146 @@
     </nav>
     <!-- MENU HEADER -->
 
-    <!-- CART -->
-    <div class="container mt-4 mb-3">
-
-        <div class="row cart">
-            <div class="col-12">
-                <div class="block-title">Giỏ hàng của bạn</div>
+    <!-- SLIDER -->
+    <div class="container mt-3">
+        <div class="discount-slider">
+            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="d-block w-100" src="assets/images/discount1.webp" alt="Phong Vũ" title="Phong Vũ">
+                    </div>
+                    <div class="carousel-item ">
+                        <img class="d-block w-100" src="assets/images/discount2.webp" alt="Phong Vũ" title="Phong Vũ">
+                    </div>
+                    <div class="carousel-item ">
+                        <img class="d-block w-100" src="assets/images/discount3.webp" alt="Phong Vũ" title="Phong Vũ">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
             </div>
 
-            <div class="col-lg-8">
-                <div class="block bg-white py-3">
-                    <div class="d-flex align-items-center p-3 block-1">
-                        <input type="checkbox" checked>
-                        <img class="ml-3 " src="assets/images/cart-img.png" alt="" width="40" height="40">
-                        <div class="ml-3 mr-auto ">Phongvu <i class="fas fa-check-circle"></i></div>
-                        <div class="promo-price">3.590.000 ₫</div>
-                    </div>
-                    <div class="table-responsive">
-                        <table class="table">
-                            <tr>
-                                <td><input type="checkbox" checked></td>
-                                <td><img src="assets/images/discount3.jpg" alt="" height="80"></td>
-                                <td>
-                                    <a target="_self" href="#" class="css-cbrxda">
-                                        Máy pha cà phê Delonghi ECP31.21
-                                    </a>
-                                    <div class="">SKU: 200901052</div>
-                                </td>
-                                <td class="text-center">
-                                    <div class="row">
-                                        <div class="input-group col-12">
-                                            <div class="input-group-prepend" id="button-addon3">
-                                                <button class="btn btn-sm btn-outline-secondary" type="button" onclick="minus_number(13)"><i class="fas fa-minus"></i></button>
-                                            </div>
-                                            
-                                            <input type="hidden" name="product_id[13]" class="form-control" value="13">
-                                            <input type="hidden" name="price[13]" class="form-control price" value="0">
-                                            
-                                            <input type="text" name="quanlity[13]" class="form-control form-control-sm quanlity" data-price="0" quanlity-id="13" value="1">
-                                            
-                                            <input type="hidden" class="current_price" value="0">
+        </div>
+    </div>
+    <!-- END SLIDER -->
 
-                                            <div class="input-group-append" id="button-addon3">
-                                                <button class="btn btn-sm btn-outline-secondary" type="button" onclick="plus_number(13)"><i class="fas fa-plus"></i></button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </td>
-                                <td class="text-nowrap text-right">
-                                    <div class="promo-price">3.590.000 ₫</div>
-                                    <div class="old-price">
-                                        <span class="price">5.300.000 ₫</span>
-                                    </div>
-                                </td>
-                            </tr>
-                            
-                        </table>
+
+    <!-- MAIN CONTENT -->
+    <div class="container mt-3 mb-3">
+
+        <div class="row block discount-block">
+
+            <div class="col-lg-4">
+               <div class="discount-item">
+                    <a href="#" title="">
+                        <figure>
+                            <img class="w-100 h-100" src="assets/images/discount1.png" alt="Mở Bán Xiaomi Pad 5">
+                            <figcaption class="p-2">Mở Bán Xiaomi Pad 5 | Thiết Kết Mỏng Nhẹ, Trải Nghiệm Không Giới Hạn</figcaption>
+                        </figure>
+                    </a>
+                    <div class="d-flex align-items-center justify-content-between px-2 pb-2">
+                        <div class="css-0">28/10/2021 - 6/11/2021</div>
+                        <a href="#" class="btn btn-sm view-more">Xem chi tiết</a>
                     </div>
                 </div>
             </div>
 
             <div class="col-lg-4">
-                <div class="bg-white mb-3 p-3">
-                    <strong>Mã giảm giá</strong>
-                    <div class="input-group my-3">
-                        <input type="text" class="form-control" placeholder="" aria-label="Example text with two button addons" aria-describedby="button-addon3">
-                        <div class="input-group-prepend" id="button-addon3">
-                            <button class="btn btn-light btn-active" btn-bg type="button" disable>Áp dụng mã</button>
-                        </div>
+               <div class="discount-item inactive">
+                    <a href="#" title="">
+                        <figure>
+                            <img class="w-100 h-100" src="assets/images/discount2.png" alt="Mở Bán Xiaomi Pad 5">
+                            <figcaption class="p-2">Mở Bán Xiaomi Pad 5 | Thiết Kết Mỏng Nhẹ, Trải Nghiệm Không Giới Hạn</figcaption>
+                        </figure>
+                    </a>
+                    <div class="d-flex align-items-center justify-content-between px-2 pb-2">
+                        <div class="css-0">28/10/2021 - 6/11/2021</div>
+                        <a href="#" class="btn btn-sm view-more">Xem chi tiết</a>
                     </div>
-                </div>
-
-                <div class="bg-white p-3">
-                    <strong><big>Thanh toán</big></strong>
-                    <div class="row mt-3">
-                        <div class="col-6 mb-2">Tạm tính</div>
-                        <div class="col-6 mb-2 text-right"><strong>3.590.000 đ</strong></div>
-                        <div class="col-6 mb-2">Thành tiền</div>
-                        <div class="col-6 mb-2 text-right">
-                            <strong class="text-red"><big>3.590.000 đ</big></strong><br>
-                            (Đã bao gồm VAT)
-                        </div>
-                    </div>
-                    <button type="button" class="btn btn-lg checkout">Thành toán<br>Bạn cần đăng nhập đẻ tiếp tục</small></button>
                 </div>
             </div>
 
+            <div class="col-lg-4">
+               <div class="discount-item">
+                    <a href="#" title="">
+                        <figure>
+                            <img class="w-100 h-100" src="assets/images/discount3.jpg" alt="Mở Bán Xiaomi Pad 5">
+                            <figcaption class="p-2">Mở Bán Xiaomi Pad 5 | Thiết Kết Mỏng Nhẹ, Trải Nghiệm Không Giới Hạn</figcaption>
+                        </figure>
+                    </a>
+                    <div class="d-flex align-items-center justify-content-between px-2 pb-2">
+                        <div class="css-0">28/10/2021 - 6/11/2021</div>
+                        <a href="#" class="btn btn-sm view-more">Xem chi tiết</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+               <div class="discount-item inactive">
+                    <a href="#" title="">
+                        <figure>
+                            <img class="w-100 h-100" src="assets/images/discount1.png" alt="Mở Bán Xiaomi Pad 5">
+                            <figcaption class="p-2">Mở Bán Xiaomi Pad 5 | Thiết Kết Mỏng Nhẹ, Trải Nghiệm Không Giới Hạn</figcaption>
+                        </figure>
+                    </a>
+                    <div class="d-flex align-items-center justify-content-between px-2 pb-2">
+                        <div class="css-0">28/10/2021 - 6/11/2021</div>
+                        <a href="#" class="btn btn-sm view-more">Xem chi tiết</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+               <div class="discount-item">
+                    <a href="#" title="">
+                        <figure>
+                            <img class="w-100 h-100" src="assets/images/discount2.png" alt="Mở Bán Xiaomi Pad 5">
+                            <figcaption class="p-2">Mở Bán Xiaomi Pad 5 | Thiết Kết Mỏng Nhẹ, Trải Nghiệm Không Giới Hạn</figcaption>
+                        </figure>
+                    </a>
+                    <div class="d-flex align-items-center justify-content-between px-2 pb-2">
+                        <div class="css-0">28/10/2021 - 6/11/2021</div>
+                        <a href="#" class="btn btn-sm view-more">Xem chi tiết</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+               <div class="discount-item">
+                    <a href="#" title="">
+                        <figure>
+                            <img class="w-100 h-100" src="assets/images/discount3.jpg" alt="Mở Bán Xiaomi Pad 5">
+                            <figcaption class="p-2">Mở Bán Xiaomi Pad 5 | Thiết Kết Mỏng Nhẹ, Trải Nghiệm Không Giới Hạn</figcaption>
+                        </figure>
+                    </a>
+                    <div class="d-flex align-items-center justify-content-between px-2 pb-2">
+                        <div class="css-0">28/10/2021 - 6/11/2021</div>
+                        <a href="#" class="btn btn-sm view-more">Xem chi tiết</a>
+                    </div>
+                </div>
+            </div>
+
+
         </div>
     </div>
-    <!-- END CART -->
+    <!-- END MAIN CONTENT -->
+
+
+    <nav aria-label="Page navigation example">
+      <ul class="pagination justify-content-center">
+        <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item"><a class="page-link" href="#">Next</a></li>
+      </ul>
+    </nav>
 
 
     <footer class="footer-area">
@@ -393,7 +444,74 @@
     <!-- END JS LIB -->
 
     <script>
-       
+        var owl = $('.owl-one');
+        owl.owlCarousel({
+            loop: true,
+            margin: 12,
+            responsiveClass: true,
+            responsive: {
+                0: {
+                    items: 2,
+                    nav: false
+                },
+                600: {
+                    items: 3,
+                    nav: false
+                },
+                1000: {
+                    items: 5,
+                    nav: false,
+                }
+            }
+        });
+
+        var owl2 = $('.owl-two');
+        owl2.owlCarousel({
+            loop: true,
+            margin: 20,
+            autoplay: true,
+            dots: false,
+            responsiveClass: true,
+            responsive: {
+                0: {
+                    items: 2,
+                    nav: false
+                },
+                600: {
+                    items: 2,
+                    nav: false
+                },
+                1000: {
+                    items: 4,
+                    nav: false,
+                    // loop:false
+                }
+            }
+        });
+
+        var owl2 = $('.owl-three');
+        owl2.owlCarousel({
+            loop: true,
+            margin: 10,
+            autoplay: true,
+            dots: false,
+            responsiveClass: true,
+            responsive: {
+                0: {
+                    items: 2,
+                    nav: false
+                },
+                600: {
+                    items: 3,
+                    nav: false
+                },
+                1000: {
+                    items: 5,
+                    nav: false,
+                    // loop:false
+                }
+            }
+        });
     </script>
 
 </body>

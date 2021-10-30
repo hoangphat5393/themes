@@ -23,9 +23,9 @@ table.vcenter > tbody > tr > td {
   -o-transition: all 0.3s linear;
   -ms-transition: all 0.3s linear; }
 
-.item-transform, .promo-product .tab-content .promo-item figure img, .brand .brand-item figure img, .main-product figure img, .best-sell .best-sell-item figure img, .product-cus .product-cus-item figure img {
+.item-transform, .promo-product .tab-content .promo-item figure img, .brand .brand-item figure img, .main-product figure img, .best-sell .best-sell-item figure img, .product-cus .product-cus-item figure img, .discount-slider img {
   transition: transform 0.3s ease 0s; }
-  .item-transform:hover, .promo-product .tab-content .promo-item figure img:hover, .brand .brand-item figure img:hover, .main-product figure img:hover, .best-sell .best-sell-item figure img:hover, .product-cus .product-cus-item figure img:hover {
+  .item-transform:hover, .promo-product .tab-content .promo-item figure img:hover, .brand .brand-item figure img:hover, .main-product figure img:hover, .best-sell .best-sell-item figure img:hover, .product-cus .product-cus-item figure img:hover, .discount-slider img:hover {
     transform: scale(1.05); }
 
 .bg-white, .main-menu, .promo-product .tab-content .promo-item, .brand, .main-product .block, .main-product .grid-block .product-items, .best-sell .best-sell-item, .product-cus .product-cus-item, .fliter, .product-detail .product-sumary, .product-detail .product-policy, .product-detail .product-content, .product-detail .product-feature, .promo-page, .promo-cat-p, footer .footer-cat {
@@ -509,10 +509,79 @@ header a {
   background-image: url("../images/bg/desktop-bg.jpg");
   background-size: cover !important;
   background-repeat: no-repeat !important; }
-  .promo-page-2 .promo-product .nav-pills .nav-item .nav-link {
-    height: auto !important; }
+  .promo-page-2 .promo-product {
+    background-image: none;
+    background: #fff;
+    border-radius: 0; }
+    .promo-page-2 .promo-product .nav-pills .nav-item .nav-link {
+      background: #fff;
+      height: 44px;
+      line-height: 30px;
+      font-size: 14px;
+      color: #291B44 !important;
+      border-bottom: .5px solid #b4c0bb;
+      border-radius: 0; }
+      .promo-page-2 .promo-product .nav-pills .nav-item .nav-link.active {
+        color: #fff;
+        border-bottom: 2.5px solid #291b44; }
+      .promo-page-2 .promo-product .nav-pills .nav-item .nav-link:hover {
+        background: #dcdcdc; }
+    .promo-page-2 .promo-product .nav-pills .nav-item:before {
+      content: none; }
 
 /*END PROMO CAT*/
+/*DISCOUNT*/
+.discount-slider img {
+  border-radius: 8px; }
+
+.discount-block a {
+  text-decoration: none; }
+.discount-block .discount-item {
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  -o-box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  box-sizing: border-box; }
+  .discount-block .discount-item.inactive {
+    filter: grayscale(100%);
+    opacity: 0.6; }
+  .discount-block .discount-item figure {
+    font-weight: 600;
+    color: #000; }
+    .discount-block .discount-item figure img {
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px; }
+  .discount-block .discount-item .view-more {
+    background-color: #024dbc;
+    color: #fff; }
+
+/*END DISCOUNT*/
+/*CART*/
+.cart a {
+  text-decoration: none; }
+.cart img {
+  border: 1px solid #e4e5f0; }
+.cart table tr td {
+  vertical-align: middle; }
+.cart .block-1 img {
+  border-radius: 50%;
+  object-fit: contain; }
+.cart .block-1 i {
+  color: #30cd60; }
+.cart .checkout {
+  background-color: #1435c3;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 14px;
+  width: 100%;
+  padding: 0.4rem 1rem; }
+.cart .btn-active {
+  background-color: #1435c3 !important;
+  color: #fff; }
+
+/*END CART*/
 /*FOOTER*/
 footer {
   border-top: solid 3px #1435C3;

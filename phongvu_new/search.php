@@ -1,287 +1,762 @@
-<!-- LIB -->
-<?php require_once('product_c/product_c.php');?>
-
-<?php 
-    $atz = new product_controller();
-
-    
-    $product_list = array();
-
-
-    if(isset($_GET['q']) && !empty($_GET['q'])){
-        $product_list = $atz->get_search_product();
-    }   
-?>
-
 <!doctype html>
 <html lang="vi">
 
-    <head>
-        
-        <!-- HEAD -->
-        <?php include('modules/head.php') ?>
-        <!-- END HEAD -->
+<head>
 
-        <!-- SEO -->
-        <meta name="description" content="<?=SETTING['Setting_Description']?>">
-        <meta name="keywords" content="<?=SETTING['Setting_Keywords']?>">
+    <!-- HEAD -->
+    <meta charset="utf-8">
 
-        <title><?=SETTING['Setting_Title']?></title>
-        
-    </head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <body>
+    <link id="favicon" rel="shortcut icon" href="assets/images/header/logo_40x40.png" type="image/x-icon">
 
-        <!-- HEADER -->
-        <header>
-            <?php include('modules/header.php');?>
-        </header>
-        <!-- END HEADER -->
+    <link rel="canonical" href="http://localhost/amthuc68.vn/">
 
-        <!-- MENU -->
-        <?php include('modules/menu.php')?>
-        <!-- MENU HEADER -->
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/bootstrap-4.6.0/css/bootstrap.min.css">
 
-        <!-- PRODUCT -->
-        <div class="container mt-4">
+    <!--[if IE]>
+        <link href="https://cdn.jsdelivr.net/gh/coliff/bootstrap-ie8/css/bootstrap-ie9.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/g/html5shiv@3.7.3"></script>
+    <![endif]-->
+    <!--[if lt IE 9]>
+        <link href="https://cdn.jsdelivr.net/gh/coliff/bootstrap-ie8/css/bootstrap-ie8.min.css" rel="stylesheet">
+    <![endif]-->
 
-            <div class="row mt-3">
-                <div class="col-lg-3 order-2 order-lg-1 main-cat">
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" href="assets/owl.carousel-2.3.4/css/owl.carousel.min.css">
 
-                    <div class="row mb-3">
-                        <?php include('modules/left_sidebar.php') ?>
+    <!-- Jquery Simplyscroll -->
+    <link rel="stylesheet" href="assets/jquery-simplyscroll-2.1.1/jquery.simplyscroll.css">
+
+    <!-- Font Awesome Pro -->
+    <link rel="stylesheet" href="assets/fontawesome-pro-5.8.0/css/fontawesome-all.min.css">
+
+    <!-- Custom -->
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css">
+
+    <!-- END HEAD -->
+
+    <!-- SEO -->
+    <meta name="description" content=" ">
+    <meta name="keywords" content="Ẩm thực">
+
+    <title>Phong Vũ</title>
+</head>
+
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="header_2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <ul class="list-inline text-right my-2">
+                            <li class="list-inline-item"><a href="#"><i class="fas fa-hotel"></i> Hệ thống Showroom</a></li>
+                            <li class="list-inline-item"><a href="#"><i class="fas fa-headphones-alt"></i> Tư vấn mua hàng: 1800 6867</a></li>
+                            <li class="list-inline-item"><a href="#"><i class="fas fa-headphones-alt"></i> CSKH: 1800 6867</a></li>
+                            <li class="list-inline-item"><a href="#"><i class="fas fa-desktop"></i> Tin công nghệ</a></li>
+                            <li class="list-inline-item"><a href="#"><i class="fal fa-cog"></i> Xây dựng cấu hình</a></li>
+                        </ul>    
                     </div>
-                    
                 </div>
-
-                <div class="col-lg-9 order-1 order-lg-2 mb-5 main-product search_rs">
-
-                    <div class="row mb-3">
-                        <div class="col-12">
-                            <h4>Kết quả tìm kiếm: <span><?=$_GET['q']?></span></h4>
-                            <div class="row mt-4">
-                                <?php if (!empty($product_list)): ?>
-                                    <?php foreach ($product_list as $v): ?>
-                                        <div class="col-6 col-md-3 mb-4">
-                                            <div class="product-item">
-                                                <figure class="text-center">
-                                                    <a href="product.php?id=<?=$v['Product_ID']?>" title="<?=$v['Product_Name_vi']?>">
-                                                        <img class="w-100" src="<?=str_replace('../', '', $v['Product_Thumbnail'])?>" alt="<?=$v['Product_Name_vi']?>">
-                                                    </a>
-                                                    <figcaption><a href="#"><?=$v['Product_Name_vi']?></a></figcaption>
-                                                    Giá:
-                                                    <?php if ($v['Product_Price']): ?>
-                                                        <span class="price">
-                                                            <?=number_format($v['Product_Price'],0,',','.').'đ'?>        
-                                                        </span>
-                                                    <?php else: ?>
-                                                        <span class="price">
-                                                            <a href="tel:<?=str_replace(' ', '', SETTING['Setting_Phone'])?>">Liên hệ</a>
-                                                        </span>
-                                                    <?php endif ?>
-                                                </figure>
-                                            </div>
-                                        </div>   
-                                    <?php endforeach ?>
-                                <?php else: ?>
-                                    <div class="col-12 mb-4">
-                                        <p class="font-weight-bold text-center">Không có sản phẩm phù hợp</p>
-                                    </div>
-                                <?php endif ?>
-                                
-                            </div>
-                        </div>
-
-                    </div>
-                    <!-- <nav class="mt-4">
-                        <ul class="pagination justify-content-center">
-                            <li class="page-item disabled">
-                                <span class="page-link">Previous</span>
-                            </li>
-                            <li class="page-item"><a class="page-link" href="#">1</a></li>
-                            <li class="page-item active" aria-current="page">
-                                <span class="page-link">
-                                    2 <span class="sr-only">(current)</span>
-                                </span>
-                            </li>
-                            <li class="page-item"><a class="page-link" href="#">3</a></li>
-                            <li class="page-item">
-                                <a class="page-link" href="#">Next</a>
-                            </li>
-                        </ul>
-                    </nav> -->
-
-                </div>
-
             </div>
         </div>
-        <!-- END PRODUCT -->
+    </header>
+    <!-- END HEADER -->
 
+    <!-- MENU -->
+    <nav class="navbar-light sticky-top main-menu">
+        <div class="container px-0 py-3">
 
+            <div class="d-md-flex align-items-center">
 
-        <div class="container-fluid">
-
-            <div class="row justify-content-center align-items-center bg-contact py-3">
-
-                <div class="col-lg-5 mb-xl-0 mb-3">
-
-                    <div class="row justify-content-center">
-                        
-                        <div class="col-9 text-center">
-                            
-                            <div id="carouselExampleControls" class="carousel slide text-center" data-ride="carousel">
-                                <div class="carousel-inner">
-                                    <div class="carousel-item active">
-                                        <img class="d-block w-100" src="uploads/tieucanh.jpg" alt="First slide">
-                                    </div>
-                                </div>
-                                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                    <span class="sr-only">Previous</span>
-                                </a>
-                                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                    <span class="sr-only">Next</span>
-                                </a>
-                            </div>
-
-                        </div>
-
-                    </div>
-
+                <div class="order-1 logo">
+                    <a href="index.php"><img src="assets/images/logo.svg" alt="" class="w-100" height="35px"></a>
                 </div>
 
-
-                <!-- FORM -->
-                <div class="col-lg-5">
-
-                    <fieldset class="reg-form">
-                        <legend class="text-center"><strong>ĐĂNG KÝ NHẬN TIN</strong></legend>
-                    
-                        <form method="post" class="text-center">
-                            <p class="text-white">Nhập thông tin của bạn vào Form bên dưới để nhận tin từ chúng tôi!</p>
-                            <div class="form-row">
-
-                                <div class="col-md-6">
-                                    <div class="row">
-                                        <div class="col-12 mb-3">
-                                            <input type="text" class="form-control" placeholder="Họ và tên*">        
-                                        </div>
-
-                                        <div class="col-12 mb-3">
-                                            <input type="text" class="form-control" placeholder="Điện thoại*">        
-                                        </div>
-
-                                        <div class="col-12 mb-3">
-                                            <input type="text" class="form-control" placeholder="Email*">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <textarea class="form-control" rows="6">Nội dung*</textarea>
-                                </div>
+                <div class="order-3 flex-fill px-3">
+                    <div class="search-block">
+                        <form action="search.php" class="my-2 my-lg-0">
+                            <div class="form-group">
+                                <input class="form-control input-search mr-sm-2 w-100" type="search" placeholder="Tìm kiếm" name=q value="">
+                                <button type="submit" class="btn-search  my-sm-0"><i class="fa fa-search fa-fw"></i></button>
                             </div>
-                            <input type="submit" class="btn btn-warning btn-contact" value="Liên hệ ngay">    
-                            
                         </form>
-
-                    </fieldset>
-                    
-                </div>
-                <!-- END FORM -->
-            </div>
-        </div>
-        
-
-
-        <div class="container my-5">
-
-            <div class="row main_news">
-                <div class="col-lg-4 blog">
-                    <h4>KIẾN THỨC NÔNG NGHIỆP</h4>
-                    <ul id="scroller">
-                        <li class="row">
-                            <div class="col-md-12">
-                                <img class="img-fluid" src="uploads/kienthuc1.jpg" alt="Firehouse" align="left">
-                                <h5><a href="cham-soc-bao-ve-vat-nuoi-trong-mua-nang-nong">Triển vọng từ giống lúa hữu cơ thảo dược tím</a></h5>
-                                <p>Lúa thảo dược tím được đưa vào sản xuất ở Quảng Trị đã vài năm nay nhưng trước đây nông dân thâm canh giống lúa...</p>
-                            </div>
-                        </li>
-
-                        <li class="row">
-                            <div class="col-md-12">
-                                <img class="img-fluid" src="uploads/kienthuc2.jpg" alt="Firehouse" align="left">
-                                <h5><a href="cham-soc-bao-ve-vat-nuoi-trong-mua-nang-nong">Chăm sóc, bảo vệ vật nuôi trong mùa nắng nóng</a></h5>
-                                <p>Để chủ động chăm sóc, bảo vệ đàn vật nuôi trong mùa nắng nóng năm nay, ngành nông nghiệp, chính quyền các địa phương...</p>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-                 
-                <div class="col-lg-4">
-                    <h4>VIDEO CLIP</h4>
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div id="ajax_video" class="ajax_video p-2">
-                                <iframe width="100%" height="290" src="https://www.youtube.com/embed/blgRF0H8gVk" frameborder="0" allowfullscreen=""></iframe>
-                                <select name="list-video" class="form-control list-video">
-                                    <option value="blgRF0H8gVk">Cách trồng rau cải hữu cơ: xà lách, bẹ xanh và bẹ ngọt tại nhà.</option>
-                                    <option value="qr6bTDJefMs">Cách trồng và chăm sóc hoa đồng tiền cho hoa đẹp 4 mùa</option>
-                                    <option value="eBDh72nyDvs">Trồng và chăm sóc cúc đồng tiền sau khi chơi tết</option>
-                                </select>
-                            </div>
-                        </div>
                     </div>
                 </div>
 
-                <div class="col-lg-4">
-                    <h4>TIN TỨC NÔNG NGHIỆP</h4>
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="post-slider p-2">
-                                
-                                <div class="owl-two owl-carousel owl-theme">
-                                    <div class="item product-item">
-                                        <figure>
-                                            <a href="#"><img class="w-100" src="uploads/post1.jpg" alt=""></a>
-                                        </figure>
-                                        <div class="bgdate float-left text-center">
-                                            <strong>01</strong>
-                                            <br>
-                                            THÁNG 1
-                                        </div>
-                                        <h5><a href="gia-gao-viet-nam-cao-nhat-trong-vong-1-nam">Giá gạo Việt Nam cao nhất trong vòng 1 năm</a></h5>
-                                        <p>Giá gạo tại nhiều nước châu Á đều liên tục đi lên và đứng ở mức cao nhất trong vòng 1 năm qua.</p>
-                                    </div>
+                <div class="order-4 d-flex text-center nav-title">
+                    <a href="#" class="">
+                        <div><i class="far fa-2x fa-tags"></i></div>
+                        Khuyến mãi
+                    </a>
+                    <a href="#" class="">
+                        <i class="far fa-2x fa-receipt"></i><br>
+                        Đơn hàng
+                    </a>
+                    <a href="#" class="">
+                        <i class="far fa-2x fa-bell"></i><br>
+                        Thông báo
+                    </a>
+                    <a href="#" class="">
+                        <i class="far fa-2x fa-user"></i><br>
+                        Đăng nhập
+                    </a>
+                    <a href="#" class="">
+                        <i class="far fa-2x fa-shopping-cart"></i><br>
+                        Giỏ hàng
+                    </a>
+                </div>
 
-                                    <div class="item product-item">
+                <div class="order-2 dropdown drop-menu-top d-block px-3">
+                    <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="navbar-toggler-icon"></span> Danh mục sản phẩm
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#" title="Điện máy - Điện gia dụng">
+                            <img src="https://lh3.googleusercontent.com/YPRilsUoP8qUlqo5pP9qiIVT3GztqhJE8JnEqKc1nheAxqtJRy9Hdw2WuSuktg5Hf4wnK1aWvbBobrF4Lg=rw" alt="Điện máy - Điện gia dụng">
+                            Điện máy - Điện gia dụng
+                        </a>
+                        <a class="dropdown-item" href="#" title="Laptop & Macbook">
+                            <img src="https://lh3.googleusercontent.com/HlvqHeKrnQcQews3r-pJDg78HfAqQ3bF29HynFvmsiYAEjjaw1S71s5xNhp9ci2gbOw4cHGpgU_rMUtlO3U=rw" alt="Laptop &amp; Macbook">
+                            Laptop & Macbook
+                        </a>
+                        <a class="dropdown-item" href="#" title="Tivi - Màn hình TV">
+                            <img src="https://lh3.googleusercontent.com/cM5lP27Q3TudfM_zH6Y3TMehQDvhQUO73MxuyvV-pKnHs0P0pDo-jHWcCY4wy3FzgUJ5h-VL3I7p-b5EtpQ=rw" alt="Tivi - Màn hình TV">
+                            Tivi - Màn hình TV
+                        </a>
+                        <a class="dropdown-item" href="#" title="Điện thoại & Thiết bị thông minh">
+                            <img src="https://lh3.googleusercontent.com/dkzFFaKYmPLLkPnC-cyefC1u1Qh0Iy_6Loz7adsbIMs-KAK8FA_PwUOklM3gEppESc1uSeaTa63U4Vejifo=rw" alt="Điện thoại & Thiết bị thông minh">
+                            Điện thoại & Thiết bị thông minh
+                        </a>
+                        <a class="dropdown-item" href="#" title="Màn hình máy tính">
+                            <img src="https://lh3.googleusercontent.com/iRXHBhcy0POD2QZ8HdjIsEhi_PyXoTkDja7HNcASAffs8SFIDCpibFnhDOYLSOtLEFMFrUMTl6LAG9bTBjLX=rw">
+                            Màn hình máy tính
+                        </a>
+                        <a class="dropdown-item" href="#" title="Linh kiện máy tính">
+                            <img src="https://lh3.googleusercontent.com/E8-60MiG4OduP7DyMTdMEdCWEe34sGNJoCCInwqob_5uCcYk1TqMzHlJuURHYGMjSohgUmhiyQOKMAqqDw=rw">
+                            Linh kiện máy tính
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+            
+        </div>
+
+    </nav>
+    <!-- MENU HEADER -->
+
+    <!-- SLIDER -->
+    <div class="slider">
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="assets/images/slide1.webp" alt="Phong Vũ" title="Phong Vũ">
+                </div>
+                <div class="carousel-item ">
+                    <img class="d-block w-100" src="assets/images/slide2.webp" alt="Phong Vũ" title="Phong Vũ">
+                </div>
+                <div class="carousel-item ">
+                    <img class="d-block w-100" src="assets/images/slide3.webp" alt="Phong Vũ" title="Phong Vũ">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+
+    </div>
+    <!-- END SLIDER -->
+
+    <!-- FLITER -->
+    <div class="container mt-4 mb-3">
+
+        <div class="block fliter py-3">
+
+            <div class="block-title d-flex align-items-center">
+                <div class="col-md-3">Bộ lọc</div>
+                <div class="col-md-9">
+                    <div class="d-flex flex-wrap fliter-select">
+                        <div class="selected-tag">
+                            <span>APPLE</span> <i class="fas fa-sm fa-times"></i>
+                        </div>
+                        <div class="selected-tag">
+                            <span>SAMSUNG</span> <i class="fas fa-sm fa-times"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <dl class="row align-items-center mt-3 px-3">
+                <dt class="col-sm-3">Thương hiệu</dt>
+                <dd class="col-sm-9">
+                    <div class="d-flex flex-wrap fliter-select">
+                        <div class="items-tag selected">
+                            <span>APPLE</span> <span class="">✓</span>
+                        </div>
+                        <div class="items-tag selected">
+                            <span>SAMSUM</span> <span class="">✓</span>
+                        </div>
+                        <div class="items-tag">
+                            <span>XAOMI</span>
+                        </div>
+                    </div>
+                </dd>
+
+                <dt class="col-sm-3">Dung lượng (ROM)</dt>
+                <dd class="col-sm-9">
+                    <div class="d-flex flex-wrap fliter-select">
+                        <div class="items-tag">
+                            <span>64GB</span>
+                        </div>
+                        <div class="items-tag">
+                            <span>128GB</span>
+                        </div>
+                        <div class="items-tag">
+                            <span>256GB</span>
+                        </div>
+                        <div class="items-tag">
+                            <span>512GB</span>
+                        </div>
+                    </div>
+                </dd>
+
+                <dt class="col-sm-3">Hệ điều hành</dt>
+                <dd class="col-sm-9">
+                    <div class="d-flex flex-wrap fliter-select">
+                        <div class="items-tag">
+                            <span>IOS</span>
+                        </div>
+                        <div class="items-tag">
+                            <span>Android</span>
+                        </div>
+                    </div>
+                </dd>
+
+                <dt class="col-sm-3">RAM</dt>
+                <dd class="col-sm-9">
+                    <div class="d-flex flex-wrap fliter-select">
+                        <div class="items-tag">
+                            <span>4GB</span>
+                        </div>
+                        <div class="items-tag">
+                            <span>6GB</span>
+                        </div>
+                        <div class="items-tag">
+                            <span>8GB</span>
+                        </div>
+                        <div class="items-tag">
+                            <span>12GB</span>
+                        </div>
+                    </div>
+                </dd>
+            </dl>
+        </div>
+    </div>
+    <!-- END FLITER -->
+
+    <!-- PRODUCT CUSTOMER -->
+    <div class="container mt-4 mb-3">
+
+        <div class="row">
+
+            <div class="col-lg-12">
+
+                <div class="block product-cus py-3">
+                    <div class="block-title pl-3">Sắp xếp theo</div>
+
+                    <div class="border-bottom mb-3">
+
+                        <div class="row row-cols-2 row-cols-md-5">
+                            <div class="col">
+                                <div class="item product-cus-item">
+                                    <a href="#" title="">
                                         <figure>
-                                            <a href="#"><img class="w-100" src="uploads/post2.jpg" alt=""></a>
+                                            <div class="overflow-hidden">
+                                                <img class="w-100" src="assets/images/product-cus1.webp" alt="Laptop MacBook Pro 2020 13.3 inch MYD92SA/A (M1/8GB/SSD512GB) (Xám) - Hàng trưng bày">
+                                            </div>
+                                            <figcaption>Laptop MacBook Pro 2020 13.3 inch MYD92SA/A (M1/8GB/SSD512GB) (Xám) - Hàng trưng bày</figcaption>
                                         </figure>
-                                        <div class="bgdate float-left text-center">
-                                            <strong>02</strong>
-                                            <br>
-                                            THÁNG 1
+                                        <div class="promo-price">36.890.000 ₫</div>
+                                        <div class="old-price">
+                                            <span class="price">39.990.000 ₫</span> 
+                                            <span class="rate">-7.75%</span>
                                         </div>
-                                        <h5><a href="#">Trang chủ » Dự báo sâu bệnh » Dự báo sâu bệnh tổng hợp trong tuần (20.04.2020) Dự báo sâu bệnh tổng </a></h5>
-                                        <p>Theo Trung tâm Dự báo khí tượng thuỷ văn trung ương, khu vực Đồng bằng sông Cửu Long tuần này thời tiết giao mùa có xen...</p>
-                                    </div>
-                                    
+                                    </a>
                                 </div>
                             </div>
+
+                            <div class="col">
+                                <div class="item product-cus-item">
+                                    <a href="#" title="Vỏ máy tính/ Case Phong Vũ PV-H5 + quạt tản nhiệt 120mm(led)">
+                                        <figure>
+                                            <div class="overflow-hidden">
+                                                <img class="w-100" src="assets/images/product-cus2.webp" alt="Vỏ máy tính/ Case Phong Vũ PV-H5 + quạt tản nhiệt 120mm(led)">
+                                            </div>
+                                            <figcaption>Vỏ máy tính/ Case Phong Vũ PV-H5 + quạt tản nhiệt 120mm(led)</figcaption>
+                                        </figure>
+                                        <div class="promo-price">530.000 ₫</div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="item product-cus-item">
+                                    <a href="#" title="Bộ chia/Hub USB 3.0 sang HDMI Orico UTH-SV (Bạc)">
+                                        <figure>
+                                            <div class="overflow-hidden">
+                                                <img class="w-100" src="assets/images/product-cus3.webp" alt="Bộ chia/Hub USB 3.0 sang HDMI Orico UTH-SV (Bạc)">
+                                            </div>
+                                            <figcaption>Bộ chia/Hub USB 3.0 sang HDMI Orico UTH-SV (Bạc)</figcaption>
+                                        </figure>
+                                        <div class="promo-price">495.000 ₫</div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="item product-cus-item">
+                                    <a href="#" title="Tai nghe Logitech G333 (Tím)">
+                                        <figure>
+                                            <div class="overflow-hidden">
+                                                <img class="w-100" src="assets/images/product-cus4.webp" alt="Tai nghe Logitech G333 (Tím)">
+                                            </div>
+                                            <figcaption>Tai nghe Logitech G333 (Tím)</figcaption>
+                                        </figure>
+                                        <div class="promo-price">1.290.000 ₫</div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="item product-cus-item">
+                                    <a href="#" title="product-cus5">
+                                        <figure>
+                                            <div class="overflow-hidden">
+                                                <img class="w-100" src="assets/images/product-cus5.webp" alt="product-cus5">
+                                            </div>
+                                            <figcaption>product-cus5</figcaption>
+                                        </figure>
+                                        <div class="promo-price">4.090.000 ₫</div>
+                                    </a>
+                                </div>
+                            </div>
+
                             
                         </div>
                     </div>
-                </div>
 
+                    <div class="border-bottom mb-3">
+
+                        <div class="row row-cols-2 row-cols-md-5">
+                            <div class="col">
+                                <div class="item product-cus-item">
+                                    <a href="#" title="">
+                                        <figure>
+                                            <div class="overflow-hidden">
+                                                <img class="w-100" src="assets/images/product-cus1.webp" alt="Laptop MacBook Pro 2020 13.3 inch MYD92SA/A (M1/8GB/SSD512GB) (Xám) - Hàng trưng bày">
+                                            </div>
+                                            <figcaption>Laptop MacBook Pro 2020 13.3 inch MYD92SA/A (M1/8GB/SSD512GB) (Xám) - Hàng trưng bày</figcaption>
+                                        </figure>
+                                        <div class="promo-price">36.890.000 ₫</div>
+                                        <div class="old-price">
+                                            <span class="price">39.990.000 ₫</span> 
+                                            <span class="rate">-7.75%</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="item product-cus-item">
+                                    <a href="#" title="Vỏ máy tính/ Case Phong Vũ PV-H5 + quạt tản nhiệt 120mm(led)">
+                                        <figure>
+                                            <div class="overflow-hidden">
+                                                <img class="w-100" src="assets/images/product-cus2.webp" alt="Vỏ máy tính/ Case Phong Vũ PV-H5 + quạt tản nhiệt 120mm(led)">
+                                            </div>
+                                            <figcaption>Vỏ máy tính/ Case Phong Vũ PV-H5 + quạt tản nhiệt 120mm(led)</figcaption>
+                                        </figure>
+                                        <div class="promo-price">530.000 ₫</div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="item product-cus-item">
+                                    <a href="#" title="Bộ chia/Hub USB 3.0 sang HDMI Orico UTH-SV (Bạc)">
+                                        <figure>
+                                            <div class="overflow-hidden">
+                                                <img class="w-100" src="assets/images/product-cus3.webp" alt="Bộ chia/Hub USB 3.0 sang HDMI Orico UTH-SV (Bạc)">
+                                            </div>
+                                            <figcaption>Bộ chia/Hub USB 3.0 sang HDMI Orico UTH-SV (Bạc)</figcaption>
+                                        </figure>
+                                        <div class="promo-price">495.000 ₫</div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="item product-cus-item">
+                                    <a href="#" title="Tai nghe Logitech G333 (Tím)">
+                                        <figure>
+                                            <div class="overflow-hidden">
+                                                <img class="w-100" src="assets/images/product-cus4.webp" alt="Tai nghe Logitech G333 (Tím)">
+                                            </div>
+                                            <figcaption>Tai nghe Logitech G333 (Tím)</figcaption>
+                                        </figure>
+                                        <div class="promo-price">1.290.000 ₫</div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="item product-cus-item">
+                                    <a href="#" title="product-cus5">
+                                        <figure>
+                                            <div class="overflow-hidden">
+                                                <img class="w-100" src="assets/images/product-cus5.webp" alt="product-cus5">
+                                            </div>
+                                            <figcaption>product-cus5</figcaption>
+                                        </figure>
+                                        <div class="promo-price">4.090.000 ₫</div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            
+                        </div>
+                    </div>
+
+                    <div class="">
+
+                        <div class="row row-cols-2 row-cols-md-5">
+                            <div class="col">
+                                <div class="item product-cus-item">
+                                    <a href="#" title="">
+                                        <figure>
+                                            <div class="overflow-hidden">
+                                                <img class="w-100" src="assets/images/product-cus1.webp" alt="Laptop MacBook Pro 2020 13.3 inch MYD92SA/A (M1/8GB/SSD512GB) (Xám) - Hàng trưng bày">
+                                            </div>
+                                            <figcaption>Laptop MacBook Pro 2020 13.3 inch MYD92SA/A (M1/8GB/SSD512GB) (Xám) - Hàng trưng bày</figcaption>
+                                        </figure>
+                                        <div class="promo-price">36.890.000 ₫</div>
+                                        <div class="old-price">
+                                            <span class="price">39.990.000 ₫</span> 
+                                            <span class="rate">-7.75%</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="item product-cus-item">
+                                    <a href="#" title="Vỏ máy tính/ Case Phong Vũ PV-H5 + quạt tản nhiệt 120mm(led)">
+                                        <figure>
+                                            <div class="overflow-hidden">
+                                                <img class="w-100" src="assets/images/product-cus2.webp" alt="Vỏ máy tính/ Case Phong Vũ PV-H5 + quạt tản nhiệt 120mm(led)">
+                                            </div>
+                                            <figcaption>Vỏ máy tính/ Case Phong Vũ PV-H5 + quạt tản nhiệt 120mm(led)</figcaption>
+                                        </figure>
+                                        <div class="promo-price">530.000 ₫</div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="item product-cus-item">
+                                    <a href="#" title="Bộ chia/Hub USB 3.0 sang HDMI Orico UTH-SV (Bạc)">
+                                        <figure>
+                                            <div class="overflow-hidden">
+                                                <img class="w-100" src="assets/images/product-cus3.webp" alt="Bộ chia/Hub USB 3.0 sang HDMI Orico UTH-SV (Bạc)">
+                                            </div>
+                                            <figcaption>Bộ chia/Hub USB 3.0 sang HDMI Orico UTH-SV (Bạc)</figcaption>
+                                        </figure>
+                                        <div class="promo-price">495.000 ₫</div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="item product-cus-item">
+                                    <a href="#" title="Tai nghe Logitech G333 (Tím)">
+                                        <figure>
+                                            <div class="overflow-hidden">
+                                                <img class="w-100" src="assets/images/product-cus4.webp" alt="Tai nghe Logitech G333 (Tím)">
+                                            </div>
+                                            <figcaption>Tai nghe Logitech G333 (Tím)</figcaption>
+                                        </figure>
+                                        <div class="promo-price">1.290.000 ₫</div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="item product-cus-item">
+                                    <a href="#" title="product-cus5">
+                                        <figure>
+                                            <div class="overflow-hidden">
+                                                <img class="w-100" src="assets/images/product-cus5.webp" alt="product-cus5">
+                                            </div>
+                                            <figcaption>product-cus5</figcaption>
+                                        </figure>
+                                        <div class="promo-price">4.090.000 ₫</div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- END PRODUCT CUSTOMER -->
+
+    <nav aria-label="Page navigation example">
+      <ul class="pagination justify-content-center">
+        <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item"><a class="page-link" href="#">Next</a></li>
+      </ul>
+    </nav>
+
+
+    <footer class="footer-area">
+        <div class="footer-cat">
+            <div class="container">
+                <div class="row row-cols-2 row-cols-md-5 py-3">
+                    <div class="col">
+                        <p class="title">Hỗ trợ khách hàng</p>
+                        <ul class="list-unstyled">
+                            <li><a href="#">Thẻ ưu đãi</a></li>
+                            <li><a href="#">Trung tâm bảo hành</a></li>
+                            <li><a href="#">Thanh toán và giao hàng</a></li>
+                            <li><a href="#">Dịch vụ sửa chữa và bảo trì</a></li>
+                            <li><a href="#">Doanh nghiệp thân thiết</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col">
+                        <p class="title">Chính sách</p>
+                        <ul class="list-unstyled">
+                            <li><a href="#">Quy định chung</a></li>
+                            <li><a href="#">Chính sách Bảo mật Thông tin</a></li>
+                            <li><a href="#">Chính sách Vận chuyển và Lắp đặt</a></li>
+                            <li><a href="#">Chính sách bảo hành</a></li>
+                            <li><a href="#">Chính sách đổi trả và hoàn tiền</a></li>
+                            <li><a href="#">Quy định giá và hình thức thanh toán</a></li>
+                            <li><a href="#">Chính sách trả góp</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col">
+                        <p class="title">Thông tin Phong Vũ</p>
+                        <ul class="list-unstyled">
+                            <li><a href="#">Giới thiệu Phong Vũ</a></li>
+                            <li><a href="#">Thông tin liên hệ</a></li>
+                            <li><a href="#">Hệ thống Showroom</a></li>
+                            <li><a href="#">Hỏi đá</a></li>
+                            <li><a href="#">Tin công nghệ</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="col">
+                        <p class="title">Cộng đồng Phong Vũ</p>
+                        <ul class="list-unstyled">
+                            <li><a href="#">Giới thiệu Phong Vũ</a></li>
+                            <li><a href="#">Thông tin liên hệ</a></li>
+                            <li><a href="#">Hệ thống Showroom</a></li>
+                            <li><a href="#">Hỏi đáp</a></li>
+                            <li><a href="#">Tin công nghệ</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col">
+                        <p class="title">Email liên hệ</p>
+                        <ul class="list-unstyled">
+                            <li>Hỗ trợ Khách hàng:<br><a href="mailto:" class="contact">cskh@phongvu.vn</a></li>
+                            <li>Liên hệ báo giá:<br><a href="mailto:" class="contact">baogia@phongvu.vn</a></li>
+                            <li>Hợp tác phát triển:<br><a href="mailto:" class="contact">hoptac@phongvu.vn</a></li>
+                        </ul>
+                    </div>
+
+                </div>
             </div>
         </div>
 
-        <?php include('modules/footer.php') ?>
-        
-        <!-- JS LIB-->
-        <?php include('modules/js.php') ?>
-        <!-- END JS LIB -->
+        <div class="container">
+            <div class="row py-3">
+                <div class="col-md-4">
+                    <p class="title">Công ty cổ phần thương mại - dịch vụ Phong Vũ</p>
+                    <p>© 1997 - 2020 Công Ty Cổ Phần Thương Mại - Dịch Vụ Phong Vũ<br>Giấy chứng nhận đăng ký doanh nghiệp: 0304998358 do Sở KH-ĐT TP.HCM cấp lần đầu ngày 30 tháng 05 năm 2007</p>
+                </div>
+                <div class="col-md-6">
+                    <div class="css-wtxc87">
+                        <span class="title">Địa chỉ trụ sở chính</span>:<p>Tầng 5, Số 117-119-121 Nguyễn Du, Phường Bến Thành, Quận 1, Thành Phố Hồ Chí Minh</p>
+                        <span class="title">Văn phòng điều hành miền Bắc</span>:<p>Tầng 6, Số 1 Phố Thái Hà, Phường Trung Liệt, Quận Đống Đa, Hà Nội</p>
+                        <span class="title">Văn phòng điều hành miền Nam</span>:<p>Tầng 11 Minh Long Tower, số 17 Bà Huyện Thanh Quan, Phường Võ Thị Sáu, Quận 3, TP. Hồ Chí Minh</p>
+                        
+                    </div>
+                </div>
+                <div class="col-md-2 align-self-center">
+                    <a href="http://online.gov.vn/Home/WebDetails/4549" rel="noreferrer noopener" target="_blank" class="css-1p9dqzw">
+                        <img src="https://phongvu.vn/media/wysiwyg/phongvu/phongvu_v3/da-dang-ky.png" alt="verified logo" class="img-fluid">
+                    </a>
+                    <a href="//www.dmca.com/Protection/Status.aspx?ID=53b44883-ed2a-434d-902b-5adce10aafd5&amp;refurl=https://phongvu.vn" title="DMCA.com Protection Status" class="dmca-badge">
+                        <img src="https://images.dmca.com/Badges/dmca-badge-w100-2x1-02.png?ID=53b44883-ed2a-434d-902b-5adce10aafd5" class="img-fluid" alt="DMCA.com Protection Status">
+                    </a>
+                </div>
+            </div>
+        </div>    
+    </footer>
+
     
-    </body>
+
+    <!-- JS LIB-->
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="assets/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+    <script src="assets/bootstrap-4.6.0/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Extra -->
+    <script src="assets/owl.carousel-2.3.4/js/owl.carousel.min.js"></script>
+
+    <script src="assets/jquery-simplyscroll-2.1.1/jquery.simplyscroll.min.js"></script>
+
+    <!-- Jquery Validate -->
+    <script src="assets/jquery-validation-1.19.3/jquery.validate.min.js"></script>
+
+
+    <script>
+        $(window).scroll(function() {
+            // var img = $('.logo').find('img');
+            // var old_src = 'assets/images/logo-full.svg';
+            // var new_src = 'assets/images/logo.svg';
+
+            var drop_menu = $('.drop-menu-top');
+
+            // console.log($(window).scrollTop());
+
+            var top = 50;
+            if ($(window).scrollTop() >= top) {
+                // img.attr('src',new_src);
+                
+                // drop_menu.toggleClass('d-none');
+                // drop_menu.addClass('d-block');
+
+            } else {
+                // nav.removeClass('fixed');
+                // img.attr('src',old_src);
+                // drop_menu.removeClass('d-block');
+                
+            }
+        });
+    </script>
+
+    <script>
+        $('.dropdown-menu a.dropdown-toggle').on('click', function(e) {
+            if (!$(this).next().hasClass('show')) {
+                $(this).parents('.dropdown-menu').first().find('.show').removeClass('show');
+            }
+            var $subMenu = $(this).next('.dropdown-menu');
+            $subMenu.toggleClass('show');
+
+
+            $(this).parents('li.nav-item.dropdown.show').on('hidden.bs.dropdown', function(e) {
+                $('.dropdown-submenu .show').removeClass('show');
+            });
+
+
+            return false;
+        });
+    </script>
+
+    <!-- END JS LIB -->
+
+    <script>
+        var owl = $('.owl-one');
+        owl.owlCarousel({
+            loop: true,
+            margin: 12,
+            responsiveClass: true,
+            responsive: {
+                0: {
+                    items: 2,
+                    nav: false
+                },
+                600: {
+                    items: 3,
+                    nav: false
+                },
+                1000: {
+                    items: 5,
+                    nav: false,
+                }
+            }
+        });
+
+        var owl2 = $('.owl-two');
+        owl2.owlCarousel({
+            loop: true,
+            margin: 20,
+            autoplay: true,
+            dots: false,
+            responsiveClass: true,
+            responsive: {
+                0: {
+                    items: 2,
+                    nav: false
+                },
+                600: {
+                    items: 2,
+                    nav: false
+                },
+                1000: {
+                    items: 4,
+                    nav: false,
+                    // loop:false
+                }
+            }
+        });
+
+        var owl2 = $('.owl-three');
+        owl2.owlCarousel({
+            loop: true,
+            margin: 10,
+            autoplay: true,
+            dots: false,
+            responsiveClass: true,
+            responsive: {
+                0: {
+                    items: 2,
+                    nav: false
+                },
+                600: {
+                    items: 3,
+                    nav: false
+                },
+                1000: {
+                    items: 5,
+                    nav: false,
+                    // loop:false
+                }
+            }
+        });
+    </script>
+
+</body>
+
 </html>

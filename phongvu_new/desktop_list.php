@@ -132,7 +132,7 @@
     </div>
     <!-- END SLIDER -->
 
-    <div class="promo-page-2">
+    <div class="promo-page-2 py-4">
        
         <div class="container">
             <div class="row">
@@ -141,8 +141,6 @@
                 <div class="col-6 col-md-3 mb-3"><img src="assets/images/desktop-img3.png" class="img-fluid rounded" alt=""></div>
                 <div class="col-6 col-md-3 mb-3"><img src="assets/images/desktop-img4.png" class="img-fluid rounded" alt=""></div>
             </div>
-
-            
         </div>
         
 
@@ -264,7 +262,7 @@
             </div>
 
         </div>
-        <!-- END MAIN PRODUCT -->
+        
 
 
         <div class="container mt-4 mb-3">
@@ -393,6 +391,7 @@
             </div>
         </div>
 
+        <!-- END MAIN PRODUCT -->
     </div>
 
     
