@@ -745,6 +745,11 @@ header{
 /*CART*/
 .cart{
 	a{text-decoration: none;}
+	.block-title{
+		font-size: 24px;
+		font-weight: bold;
+		color: rgb(51, 51, 51);
+	}
 	img{
 		border: 1px solid rgb(228, 229, 240);
 	}
@@ -770,6 +775,111 @@ header{
 	}
 }
 /*END CART*/
+
+/*CONTACT*/
+.contact-page{
+	.row-divine{
+		&:not(:last-child){
+			border-bottom: 1px solid #ebebeb;
+			padding-bottom: 20px;
+		}
+		&:not(:first-child){
+    		padding-top: 10px;
+	    }
+	}
+	.block{
+		@extend .bg-white;
+		border-radius: 10px;
+		-webkit-box-shadow: 0 0 5px #999;
+    	box-shadow: 0 0 5px #999;
+    	img{border-radius: 6px;}
+    	.contact-title{
+    		color: #d42333;
+    		font-size: 1rem;
+    		font-weight: 600;
+    		margin-bottom: 7px;
+    	}
+
+    	.contact-title-bn{
+    		font-weight: 600;
+    		margin-bottom: 10px;
+    	}
+
+    	iframe{border: 0;border-radius: 6px;}
+    	.contact-map-block{
+		    position: relative;
+		    display: block;
+		    height: 300px;
+		    width: 100%;
+		    margin-top: 5px;
+
+		    img{
+		    	height: 100%;
+		    }
+
+		    >span{
+		    	position: absolute;
+			    top: 0;
+			    bottom: 0;
+			    left: 0;
+			    right: 0;
+			    background-color: rgba(0, 0, 0, 0);
+			    color: transparent;
+			    -webkit-transition: 0.5s;
+			    transition: 0.5s;
+			    border-radius: 4px;
+			    text-align: center;
+			    padding-top: 25%;
+			    font-size: 18px;
+			    &:hover{
+			    	background-color: rgba(0, 0, 0, 0.5);
+    				color: white;
+			    }
+		    }
+    	}
+    	.company-title{
+    		color: #2d3877;
+    		margin-bottom: 10px;
+    	}
+	}
+
+	.showroom{
+		h2{
+			font-size: 2rem;
+			margin: 1rem 0;
+		}
+		p{
+			margin-bottom: 0;
+			font-weight: 500;
+		}
+
+		.store-block{
+			&:nth-child(odd){
+				border-right: 1px solid #ebebeb;	
+			}
+    		border-bottom: 1px solid #ebebeb;
+    		padding: 1rem;
+
+			.store-title{
+				span {
+					display: inline-block;
+				    color: #fff;
+				    background: #2d3877;
+				    border-radius: 50%;
+				    width: 35px;
+				    min-width: 35px;
+				    height: 35px;
+				    min-height: 35px;
+				    line-height: 35px;
+				    text-align: center;
+				    
+				    margin: 0 5px 10px 0;
+				}	
+			}
+		}
+	}
+}
+/*END CONTACT*/
 
 /*FOOTER*/
 footer{
