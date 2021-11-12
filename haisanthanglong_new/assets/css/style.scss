@@ -1,20 +1,29 @@
-@font-face {
-    font-family: cgb;
-    src: url('../fonts/SFUClearGothicBold.TTF'), url('../fonts/SFUClearGothicBold.eot');
+:root{
+	--main-color: #e51429;
+	--main-bg-color: #e51429;
+	--sub-color: #084ea0;
+	--sub-bg-color: #084ea0;
 }
 
+.text-red{color: #ff0000}
+.error{color: #ff0000;}
+
+table.vcenter>tbody>tr>td {vertical-align: middle;}
+
+
+/*@font-face {
+    font-family: cgb;
+    src: url('../fonts/SFUClearGothicBold.TTF'), url('../fonts/SFUClearGothicBold.eot');
+}*/
+
 body {
-    background-color: rgb(248, 248, 252);
+    /*background-color: rgb(248, 248, 252);*/
+    @extend .bg-white;
     font-family: Roboto, sans-serif;
     line-height: 1.25rem;
     color: rgb(51, 51, 51);
 }
 
-table.vcenter>tbody>tr>td {vertical-align: middle;}
-
-.text-red{color: #ff0000}
-
-.error{color: #ff0000;}
 
 .transition {
     transition: all 0.3s linear;
@@ -29,6 +38,9 @@ table.vcenter>tbody>tr>td {vertical-align: middle;}
 	&:hover{transform: scale(1.05);}
 }
 
+
+.main-bg-color{background-color: var(--main-bg-color);}
+
 .bg-white{background-color: #fff;}
 
 header{
@@ -40,40 +52,6 @@ header{
 	    	display: none!important;
 	    }
 	}
-}
-
-
-/*MENU*/
-.main-menu {
-	@extend .bg-white;
-
-	.dropdown-menu{
-		.dropdown-item{
-			@extend .cat-link-style;
-		}
-	}
-	.drop-menu-top{display: none;}
-	
-	.nav-title{
-		font-size: .75rem;
-		a{
-			text-decoration: none;
-			min-width: 75px;
-			color: #757575;
-			&:hover{color: rgb(2, 77, 188)}
-		}
-	}
-	@media only screen and (max-width : 991.98px) {
-	    .nav-title {
-	    	display: none!important;
-	    }
-	}
-	/*
-	@media (min-width: 768px) and (max-width: 991.98px) {
-	    .nav-title {
-	    	display: none!important;
-	    }
-	}*/
 
 	.search-block{
 		.form-group{margin-bottom: 0;}
@@ -93,11 +71,6 @@ header{
 		}
 	}
 
-	
-}
-
-/*END MENU*/
-header{
 	.logo{width: 100px}
 	h1{
 		color: #4baa50;
@@ -105,10 +78,94 @@ header{
 		font-weight: bold;
 		text-transform: uppercase;
 	}
-	.header_2{background-color: #1435C3;}
+	.header_2{
+		
+	}
 
 	a{color: #fff;}
 }
+
+/*MENU*/
+.main-menu {
+	@extend .main-bg-color;
+
+	.drop-menu-top{
+		.btn-menu-toggle{
+			background-color: var(--sub-bg-color);
+			text-transform: uppercase;
+			font-family: SVNAvoBold;
+			font-size: 16px;
+			color: #fff;
+			display: block;
+			width: 100%;
+			border-radius: 0;
+		}
+	}
+	.dropdown-menu{
+		.dropdown-item{
+			@extend .cat-link-style;
+		}
+	}
+	
+	.nav-title{
+		font-size: .75rem;
+		a{
+			text-decoration: none;
+			min-width: 75px;
+			color: #757575;
+			&:hover{color: rgb(2, 77, 188)}
+		}
+	}
+
+	.criteria_item{
+		/*padding: 5px 0;*/
+		.criteria_img img{
+			max-width: 40px;
+    		max-height: 35px;
+		}
+
+		.criteria_info {
+			span{
+				text-transform: uppercase;
+			    color: #fff;
+			    font: 12px RobotoBold;
+			    overflow: hidden;
+				display: -webkit-box;
+				-webkit-box-orient: vertical;
+				-webkit-line-clamp: 1;	
+			}
+			p{
+				color: #fff;
+			    font: 12px RobotoRegular;
+			    display: -webkit-box;
+			    width: 100%;
+			    margin-bottom: 0;
+			    overflow: hidden;
+				display: -webkit-box;
+				-webkit-box-orient: vertical;
+				-webkit-line-clamp: 1;	
+			}
+			
+		}
+	}
+
+	@media only screen and (max-width : 991.98px) {
+	    .nav-title {
+	    	display: none!important;
+	    }
+	}
+	/*
+	@media (min-width: 768px) and (max-width: 991.98px) {
+	    .nav-title {
+	    	display: none!important;
+	    }
+	}*/
+
+	
+}
+
+/*END MENU*/
+
 
 .cat-link-style{
 	color: #000;
@@ -124,19 +181,15 @@ header{
 	a{text-decoration: none;}
 	position: relative;
 
-	.slide img{
-		width: 100%;
-	    height: 566px;
-	    object-fit: cover;
-	    transition: transform 0.3s ease 0s;
+	.slide{
+		img{
+		    object-fit: cover;
+		    /*transition: transform 0.3s ease 0s;*/
+		}
 	}
+	
 	.slider-menu{
-		height: 566px;
-		position: absolute;
-		top: 0;
-	    left: 0;
-	    right: 0;
-	    margin: 0 auto;
+		/*height: 566px;*/
 
 	    .cat-block{
 	    	background-color: #fff;
@@ -166,51 +219,9 @@ header{
 	    		
 	    	}
 	    }
-
-	    .sub-cat{
-	    	height: 100%;
-	    	background-color: #fff;
-	    	border-radius: .5rem;
-	    	overflow: hidden;
-	    	/*display: none;*/
-	    	/*visibility: hidden;*/
-	    	&.active{
-	    		visibility: visible;
-    			opacity: 1;
-	    	}
-
-	    	.sub-cat-block {
-			    /*flex: 1 1 0%;*/
-			    column-count: 3;
-			    padding: 0.75rem;
-			    .sub-cat-group{
-			    	margin-bottom: 1.5rem;
-			    }
-			    .sub-cat-title{
-			    	margin-bottom: .5rem;
-			    	opacity: 1;
-				    background-color: transparent;
-				    color: rgb(20, 53, 195);
-				    font-weight: 700;
-				    text-decoration: unset;
-				    font-size: 15px;
-				    line-height: 24px;
-				    overflow: hidden;
-				    display: -webkit-box;
-				    -webkit-box-orient: vertical;
-				    -webkit-line-clamp: 1;
-			    }
-			    .css-vxgewf{
-			    	color: rgb(67, 70, 87);
-			    	margin-bottom: 4px;
-			    }
-			}
-
-			figure{margin-bottom: 0;}
-	    }
 	}
 
-	@media (max-width: 575.98px) {
+	/*@media (max-width: 575.98px) {
 	    .slide img {height: 145px}
 	}
 	@media (min-width: 576px) and (max-width: 767.98px) {
@@ -221,7 +232,7 @@ header{
 	    .slider-menu {
 	    	display: none!important;
 	    }
-	}
+	}*/
 }
 /*END SLIDER*/
  
@@ -239,7 +250,7 @@ header{
 
 /*PRODUCT*/
 .promo-product{
-	background-image: url('../images/bg/promo1.png');
+	/*background-image: url('../images/bg/promo1.png');*/
 	border-radius: 8px;
 
 	.nav-pills{
@@ -334,9 +345,28 @@ header{
 
 .block{
 	.block-title{
-		border-left: solid 3.5px #1B1D29;
-		font-size: 20px;
-		font-weight: 700;
+		
+		padding-bottom: .75rem;
+		border-bottom: 2px solid #ebebeb;
+		text-transform: uppercase;
+	    font: 1.5rem SVNAvoBold;
+	    font-weight: 700;
+	    color: #252525;
+
+	    a{
+	    	font: 14px RobotoRegular;
+    		color: #084ea0;
+	    }
+
+    	&:after{
+    		position: absolute;
+		    content: '';
+		    left: 1rem;
+		    bottom: 0;
+		    width: 70px;
+		    height: 2px;
+		    background: #e51429;	
+    	}
 	}
 }
 
@@ -365,6 +395,70 @@ header{
 		}	
 	}
 }
+
+
+/*BEST SELL*/
+.best-sell{
+	a{text-decoration: none;}
+	@extend .bg-white;
+
+    .block-title{
+
+    }
+
+    .best-sell-item{
+    	@extend .bg-white;
+    	border-radius: 8px;
+    	
+    	figure{
+			margin-bottom: .5rem;
+			overflow: hidden;
+			
+			img{
+				border-radius: 5px;
+				transition: transform 0.3s ease 0s;
+				@extend .item-transform;
+			}
+			
+			figcaption{
+				margin-top: .75rem;
+				text-transform: capitalize;
+				text-align: center;
+    			font: 14px 'RobotoRegular';
+    			color: #000;
+    			overflow: hidden;
+				display: -webkit-box;
+				-webkit-box-orient: vertical;
+				-webkit-line-clamp: 1;
+    		}
+		}
+
+		.price-block{
+			font: 1rem SVNAvoBold;
+			a{
+				color: var(--main-color);
+				&:hover{
+					color: var(--sub-color);
+				}
+			}
+		}
+		.addcart{
+			margin-top: .75rem;
+			padding: 10px 5px;
+			width: 100%;
+			background-color: var(--sub-bg-color);
+			border-radius: 5px;
+			color: #fff;
+			text-transform: uppercase;
+			font: 1rem RobotoBold;
+			&:hover{
+				background-color: var(--main-bg-color);
+			}
+		}
+
+    }
+}
+/*END BEST SELL*/
 
 
 /*MAIN PRODUCT*/
@@ -402,44 +496,7 @@ header{
 }
 /*END MAIN PRODUCT*/
 
-.best-sell{
-	a{text-decoration: none;}
-	background-image: url('../images/bg-best-sell.png');
-    border-radius: 8px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center top;
 
-    .block-title{
-    	border-left: solid 3.5px #fff;
-    	color: #fff;
-    }
-    .best-sell-item{
-    	@extend .bg-white;
-    	border-radius: 8px;
-    	padding: 1rem;
-    	figure{
-			margin-bottom: .5rem;
-			
-			img{
-				transition: transform 0.3s ease 0s;
-				@extend .item-transform;
-			}
-
-			figcaption{
-    			font-size: 12px;
-    			color: rgb(67, 70, 87);
-    			height: 40px;
-    			overflow: hidden;
-				display: -webkit-box;
-				-webkit-box-orient: vertical;
-				-webkit-line-clamp: 2;
-    		}
-		}
-
-    }
-}
-/*END PRODUCT*/
 
 /*PRODUCT CUSTOMER*/
 .product-cus{
