@@ -53,13 +53,15 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
-                        <div class="d-flex">
-                            <div class=" logo">
-                                <a href="index.php"><img src="assets/images/header/logo.png" alt="" class="img-fluid"></a>
-                            </div>
-                            <div class="web-title">
-                                <h1>Hải sản Thăng Long</h1>
-                                <p>Uy tín chất lượng</p>
+                        <div class="d-flex align-items-center">
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="logo">
+                                    <a href="index.php"><img src="assets/images/header/logo.png" alt="" class="img-fluid"></a>
+                                </div>
+                                <div class="web-title-block">
+                                    <h2 class="web-title">Hải sản Thăng Long</h2>
+                                    <p>Uy tín chất lượng</p>
+                                </div>
                             </div>
 
                             <div class=" px-3">
@@ -98,32 +100,71 @@
                     <button class="btn btn-menu-toggle dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         <span class="navbar-toggler-icon"></span> Danh mục sản phẩm
                     </button>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <a class="dropdown-item" href="#" title="Điện máy - Điện gia dụng">
-                            <img src="https://lh3.googleusercontent.com/YPRilsUoP8qUlqo5pP9qiIVT3GztqhJE8JnEqKc1nheAxqtJRy9Hdw2WuSuktg5Hf4wnK1aWvbBobrF4Lg=rw" alt="Điện máy - Điện gia dụng">
-                            Điện máy - Điện gia dụng
+                    <!-- <div class="dropdown-menu list-group" aria-labelledby="dropdownMenuButton">
+
+                        <a class="dropdown-item list-group-item" href="#" title="Cá">
+                            <img src="assets/images/menu-icon1.png" alt="Cá">Cá
                         </a>
-                        <a class="dropdown-item" href="#" title="Laptop & Macbook">
-                            <img src="https://lh3.googleusercontent.com/HlvqHeKrnQcQews3r-pJDg78HfAqQ3bF29HynFvmsiYAEjjaw1S71s5xNhp9ci2gbOw4cHGpgU_rMUtlO3U=rw" alt="Laptop &amp; Macbook">
-                            Laptop & Macbook
+                        <a class="dropdown-item list-group-item" href="#" title="Tôm">
+                            <img src="assets/images/menu-icon2.png" alt="Tôm">Tôm
                         </a>
-                        <a class="dropdown-item" href="#" title="Tivi - Màn hình TV">
-                            <img src="https://lh3.googleusercontent.com/cM5lP27Q3TudfM_zH6Y3TMehQDvhQUO73MxuyvV-pKnHs0P0pDo-jHWcCY4wy3FzgUJ5h-VL3I7p-b5EtpQ=rw" alt="Tivi - Màn hình TV">
-                            Tivi - Màn hình TV
+                        <a class="dropdown-item list-group-item" href="#" title="Cua - Ghẹ">
+                            <img src="assets/images/menu-icon3.png" alt="Cua - Ghẹ">Cua - Ghẹ
                         </a>
-                        <a class="dropdown-item" href="#" title="Điện thoại & Thiết bị thông minh">
-                            <img src="https://lh3.googleusercontent.com/dkzFFaKYmPLLkPnC-cyefC1u1Qh0Iy_6Loz7adsbIMs-KAK8FA_PwUOklM3gEppESc1uSeaTa63U4Vejifo=rw" alt="Điện thoại & Thiết bị thông minh">
-                            Điện thoại & Thiết bị thông minh
+                        <a class="dropdown-item list-group-item" href="#" title="Mực">
+                            <img src="assets/images/menu-icon4.png" alt="Mực">Mực
                         </a>
-                        <a class="dropdown-item" href="#" title="Màn hình máy tính">
-                            <img src="https://lh3.googleusercontent.com/iRXHBhcy0POD2QZ8HdjIsEhi_PyXoTkDja7HNcASAffs8SFIDCpibFnhDOYLSOtLEFMFrUMTl6LAG9bTBjLX=rw">
-                            Màn hình máy tính
+                        <a class="dropdown-item list-group-item" href="#" title="Nghêu - sò - ốc">
+                            <img src="assets/images/menu-icon5.png" alt="Nghêu-sò-ôc">Nghêu-sò-ôc
                         </a>
-                        <a class="dropdown-item" href="#" title="Linh kiện máy tính">
-                            <img src="https://lh3.googleusercontent.com/E8-60MiG4OduP7DyMTdMEdCWEe34sGNJoCCInwqob_5uCcYk1TqMzHlJuURHYGMjSohgUmhiyQOKMAqqDw=rw">
-                            Linh kiện máy tính
+                        <a class="dropdown-item list-group-item" href="#" title="Hàu sữa - baba">
+                            <img src="assets/images/menu-icon6.png" alt="Hàu sữa - baba">Hàu sữa - baba
                         </a>
-                    </div>
+                        <a class="dropdown-item list-group-item" href="#" title="Thủy hải sản khác">
+                            <img src="assets/images/menu-icon7.png" alt="Thủy hải sản khác">Thủy hải sản khác
+                        </a>
+                     
+                    </div> -->
+
+                    <ul class="dropdown-menu list-group">
+                        <li class="dropdown-item list-group-item">
+                            <a class="d-block" href="#" title="Cá">
+                                <img src="assets/images/menu-icon1.png" alt="Cá">Cá
+                            </a>
+                        </li>
+                        <li class="dropdown-item list-group-item">
+                            <a href="#" title="Tôm">
+                                <img src="assets/images/menu-icon2.png" alt="Tôm">Tôm
+                            </a>
+                        </li>
+                        <li class="dropdown-item list-group-item">
+                            <a href="#" title="Cua - Ghẹ">
+                                <img src="assets/images/menu-icon3.png" alt="Cua - Ghẹ">Cua - Ghẹ
+                            </a>
+                        </li>
+                        <li class="dropdown-item list-group-item">
+                            <a href="#" title="Mực">
+                                <img src="assets/images/menu-icon4.png" alt="Mực">Mực
+                            </a>
+                        </li>
+                        <li class="dropdown-item list-group-item">
+                            <a href="#" title="Nghêu - sò - ốc">
+                                <img src="assets/images/menu-icon5.png" alt="Nghêu-sò-ôc">Nghêu-sò-ôc
+                            </a>
+                        </li>
+                        <li class="dropdown-item list-group-item">
+                            <a href="#" title="Hàu sữa - baba">
+                                <img src="assets/images/menu-icon6.png" alt="Hàu sữa - baba">Hàu sữa - baba
+                            </a>
+                        </li>
+                        <li class="dropdown-item list-group-item">
+                            <a href="#" title="Thủy hải sản khác">
+                                <img src="assets/images/menu-icon7.png" alt="Thủy hải sản khác">Thủy hải sản khác
+                            </a>
+                        </li>
+                    </ul>
+
+                    
                 </div>
 
                 <div class="col-9 owl-criteria owl-carousel owl-theme">
@@ -190,44 +231,67 @@
         <div class="row">
             <div class="col-md-3 slider-menu">
                 
-                <div class="cat-block">
-                    <a href="#" title="Điện máy - Điện gia dụng">
-                        <div class="cat-content">
-                            <img src="https://lh3.googleusercontent.com/YPRilsUoP8qUlqo5pP9qiIVT3GztqhJE8JnEqKc1nheAxqtJRy9Hdw2WuSuktg5Hf4wnK1aWvbBobrF4Lg=rw" alt="Điện máy - Điện gia dụng">
-                            <div class="cat-name">Điện máy - Điện gia dụng</div>
-                        </div>
+                <!-- <div class="list-group">
+                    <a class="list-group-item" href="#" title="Cá">
+                        <img src="assets/images/menu-icon1.png" alt="Cá">Cá
                     </a>
-                    <a href="#" title="Laptop & Macbook">
-                        <div class="cat-content">
-                            <img src="https://lh3.googleusercontent.com/HlvqHeKrnQcQews3r-pJDg78HfAqQ3bF29HynFvmsiYAEjjaw1S71s5xNhp9ci2gbOw4cHGpgU_rMUtlO3U=rw" alt="Laptop &amp; Macbook">
-                            <div class="cat-name">Laptop & Macbook</div>
-                        </div>
+                    <a class="list-group-item" href="#" title="Tôm">
+                        <img src="assets/images/menu-icon2.png" alt="Tôm">Tôm
                     </a>
-                    <a href="#" title="Tivi - Màn hình TV">
-                        <div class="cat-content">
-                            <img src="https://lh3.googleusercontent.com/cM5lP27Q3TudfM_zH6Y3TMehQDvhQUO73MxuyvV-pKnHs0P0pDo-jHWcCY4wy3FzgUJ5h-VL3I7p-b5EtpQ=rw" alt="Tivi - Màn hình TV">
-                            <div class="cat-name">Tivi - Màn hình TV</div>
-                        </div>
+                    <a class="list-group-item" href="#" title="Cua - Ghẹ">
+                        <img src="assets/images/menu-icon3.png" alt="Cua - Ghẹ">Cua - Ghẹ
                     </a>
-                    <a href="#" title="Điện thoại & Thiết bị thông minh">
-                        <div class="cat-content">
-                            <img src="https://lh3.googleusercontent.com/dkzFFaKYmPLLkPnC-cyefC1u1Qh0Iy_6Loz7adsbIMs-KAK8FA_PwUOklM3gEppESc1uSeaTa63U4Vejifo=rw" alt="Điện thoại & Thiết bị thông minh">
-                            <div class="cat-name">Điện thoại & Thiết bị thông minh</div>
-                        </div>
+                    <a class="list-group-item" href="#" title="Mực">
+                        <img src="assets/images/menu-icon4.png" alt="Mực">Mực
                     </a>
-                    <a href="#" title="Màn hình máy tính">
-                        <div class="cat-content">
-                            <img src="https://lh3.googleusercontent.com/iRXHBhcy0POD2QZ8HdjIsEhi_PyXoTkDja7HNcASAffs8SFIDCpibFnhDOYLSOtLEFMFrUMTl6LAG9bTBjLX=rw">
-                            <div class="cat-name">Màn hình máy tính</div>
-                        </div>
+                    <a class="list-group-item" href="#" title="Nghêu - sò - ốc">
+                        <img src="assets/images/menu-icon5.png" alt="Nghêu-sò-ôc">Nghêu-sò-ôc
                     </a>
-                    <a href="#" title="Linh kiện máy tính"></a>
-                        <div class="cat-content">
-                            <img src="https://lh3.googleusercontent.com/E8-60MiG4OduP7DyMTdMEdCWEe34sGNJoCCInwqob_5uCcYk1TqMzHlJuURHYGMjSohgUmhiyQOKMAqqDw=rw">
-                            <div class="cat-name">Linh kiện máy tính</div>
-                        </div>
+                    <a class="list-group-item" href="#" title="Hàu sữa - baba">
+                        <img src="assets/images/menu-icon6.png" alt="Hàu sữa - baba">Hàu sữa - baba
                     </a>
-                </div>
+                    <a class="list-group-item" href="#" title="Thủy hải sản khác">
+                        <img src="assets/images/menu-icon7.png" alt="Thủy hải sản khác">Thủy hải sản khác
+                    </a>
+                </div> -->
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        <a href="#" title="Cá">
+                            <img src="assets/images/menu-icon1.png" alt="Cá">Cá
+                        </a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="#" title="Tôm">
+                            <img src="assets/images/menu-icon2.png" alt="Tôm">Tôm
+                        </a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="#" title="Cua - Ghẹ">
+                            <img src="assets/images/menu-icon3.png" alt="Cua - Ghẹ">Cua - Ghẹ
+                        </a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="#" title="Mực">
+                            <img src="assets/images/menu-icon4.png" alt="Mực">Mực
+                        </a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="#" title="Nghêu - sò - ốc">
+                            <img src="assets/images/menu-icon5.png" alt="Nghêu-sò-ôc">Nghêu-sò-ôc
+                        </a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="#" title="Hàu sữa - baba">
+                            <img src="assets/images/menu-icon6.png" alt="Hàu sữa - baba">Hàu sữa - baba
+                        </a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="#" title="Thủy hải sản khác">
+                            <img src="assets/images/menu-icon7.png" alt="Thủy hải sản khác">Thủy hải sản khác
+                        </a>
+                    </li>
+                </ul>
+
             </div>
             <div class="col-md-6">
                 <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
@@ -261,14 +325,14 @@
     <!-- END SLIDER -->
 
 
-    <!-- PROMO -->
+    <!-- BANNER -->
     <div class="container mt-4">
         <div class="row">
             <div class="col-6 mb-3"><img src="assets/images/banner1.png" class="img-fluid rounded" alt=""></div>
             <div class="col-6 mb-3"><img src="assets/images/banner2.png" class="img-fluid rounded" alt=""></div>
         </div>
     </div>
-    <!-- END PROMO -->
+    <!-- END BANNER -->
 
     <!-- BEST SELL -->
     <div class="container mt-3 mb-3">
@@ -284,7 +348,7 @@
                 </div>
             </div>
 
-            <div class="owl-one owl-carousel owl-theme mt-3">
+            <div class="owl-product owl-carousel owl-theme mt-3">
 
                 <div class="item best-sell-item">
                     <a href="#" title="Cá mú biển">
@@ -364,7 +428,7 @@
                 </div>
             </div>
 
-            <div class="owl-one owl-carousel owl-theme mt-3">
+            <div class="owl-product owl-carousel owl-theme mt-3">
 
                 <div class="item best-sell-item">
                     <a href="#" title="Cá mú biển">
@@ -421,428 +485,197 @@
         </div>
     </div>
     <!-- END MAIN PRODUCT -->
+
 
     <div class="container mb-4">
         <div class="row">
             <div class="col-md-12">
-                <a href="#"><img class="w-100" src="assets/images/bannerlist-2.png" alt="cua, ghẹ"></a>
+                <a href="#"><img class="w-100" src="assets/images/bannerlist-4.png" alt="tôm"></a>
             </div>
         </div>
     </div>
 
-    <!-- MAIN PRODUCT -->
+    <!-- POST & EVENT -->
+    <div class="bg-warp pt-5">
+        <div class="container home-news">
+
+            <div class="row">
+
+                <div class="col-md-7">
+
+                    <div class="block">
+                        <div class="block-title">
+                            Tin tức & sự kiện
+                        </div>
+
+                        <div class="row mt-4">
+                            <div class="col-12 col-lg-5">
+                                <img src="assets/images/news1.jpg" alt="" class="img-fluid d-block mx-auto">
+                                <div class="news_first_name">
+                                    <a href="tim-hieu-ve-ca-bop-bien-tuoi-song" title="Tìm Hiểu Về Cá Bớp Biển Tươi Sống ">
+                                        Tìm Hiểu Về Cá Bớp Biển Tươi Sống  
+                                    </a>
+                                </div>
+                                <div class="news_first_describe">
+                                    <p>Toàn bộ cá bớp&nbsp;biển của chúng tôi là những con tốt nhất trên thị trường và có thịt ngọt, săn chắc kết hợp đẹp mắt với một loạt các thành phần.</p>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-lg-7">
+
+                                <ul id="scroller" class="simply-scroll-list" style="height: 672px;">
+                                    <li class="row">
+                                        <div class="col-4 px-0">
+                                            <img class="img-fluid" src="assets/images/scroll_new1.jpg" alt="Triển vọng từ giống lúa hữu cơ thảo dược tím" align="left">
+                                        </div>
+                                        <div class="col">
+                                            <h5>
+                                                <a href="#" title="BẮT ĐẦU KINH DOANH HẢI SẢN TƯƠI SỐNG NHƯ THẾ NÀO">
+                                                    BẮT ĐẦU KINH DOANH HẢI SẢN TƯƠI SỐNG NHƯ THẾ NÀO 
+                                                </a>
+                                            </h5>
+                                            <p>Vựa hải sản Thăng Long đang cần người hợp tác kinh doanh hải sản tươi sống trên địa bàn tp.hcm, đồng nai, bình dương, đà lạt,..</p>
+                                        </div>
+                                    </li>
+
+                                    <li class="row">
+                                        <div class="col-4 px-0">
+                                            <img class="img-fluid" src="assets/images/scroll_new2.jpg" alt="Triển vọng từ giống lúa hữu cơ thảo dược tím" align="left">
+                                        </div>
+                                        <div class="col">
+                                            <h5>
+                                                <a href="#" title="BẮT ĐẦU KINH DOANH HẢI SẢN TƯƠI SỐNG NHƯ THẾ NÀO">
+                                                    BẮT ĐẦU KINH DOANH HẢI SẢN TƯƠI SỐNG NHƯ THẾ NÀO 
+                                                </a>
+                                            </h5>
+                                            <p>Vựa hải sản Thăng Long đang cần người hợp tác kinh doanh hải sản tươi sống trên địa bàn tp.hcm, đồng nai, bình dương, đà lạt,..</p>
+                                        </div>
+                                    </li>
+
+                                    <li class="row">
+                                        <div class="col-4 px-0">
+                                            <img class="img-fluid" src="assets/images/scroll_new3.jpg" alt="Triển vọng từ giống lúa hữu cơ thảo dược tím" align="left">
+                                        </div>
+                                        <div class="col">
+                                            <h5>
+                                                <a href="#" title="BẮT ĐẦU KINH DOANH HẢI SẢN TƯƠI SỐNG NHƯ THẾ NÀO">
+                                                    BẮT ĐẦU KINH DOANH HẢI SẢN TƯƠI SỐNG NHƯ THẾ NÀO 
+                                                </a>
+                                            </h5>
+                                            <p>Vựa hải sản Thăng Long đang cần người hợp tác kinh doanh hải sản tươi sống trên địa bàn tp.hcm, đồng nai, bình dương, đà lạt,..</p>
+                                        </div>
+                                    </li>
+    
+                                </ul>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-5">
+                    <div class="block">
+                        <div class="block-title">Video clips</div>
+
+                        <div class="row mt-4">
+                            <div class="col-md-12">
+                                <div id="ajax_video" class="ajax_video">
+                                    <iframe width="100%" height="290" src="//www.youtube.com/embed/rwOb8lwMNA4" frameborder="0" allowfullscreen=""></iframe>
+                                    <select name="list-video" class="form-control list-video">
+                                        <option value="rwOb8lwMNA4">CÁ TAI TƯỢNG KHỦNG HƠN 20 NĂM TUỔI.</option>
+                                        <option value="qr6bTDJefMs">Cách trồng và chăm sóc hoa đồng tiền cho hoa đẹp 4 mùa</option>
+                                        <option value="eBDh72nyDvs">Trồng và chăm sóc cúc đồng tiền sau khi chơi tết</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- END POST & EVENT -->
+
+    <!-- PARTNER -->
     <div class="container mt-3 mb-3">
 
-        <div class="block best-sell py-2">
+        <div class="block partner py-2">
                     
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="d-flex align-items-center block-title">
-                        <div class="flex-grow-1">CUA-GHẸ</div>
-                        <a href="#" class="show-more pr-2">Xem tất cả <i class="fas fa-angle-right"></i></a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="owl-one owl-carousel owl-theme mt-3">
+            <div class="owl-partner owl-carousel owl-theme mt-3">
 
                 <div class="item best-sell-item">
-                    <a href="#" title="Cá mú biển">
+                    <a href="#" title="">
                         <figure>
-                            <img class="w-100" src="assets/images/best-sell1.jpg" alt="Cá mú biển">
-                            <figcaption>Cá mú biển</figcaption>
+                            <img class="w-100" src="assets/images/partner1.jpg" alt="">
+                            <figcaption></figcaption>
                         </figure>
                     </a>
-                    <div class="price-block">
-                        Giá: <a href="#" title="Liên hệ">Liên hệ</a>
-                    </div>
-                    <button class="btn addcart">Mua ngay</button>
-                </div>
-
-                <div class="item best-sell-item">
-                    <a href="#" title="tôm càng xanh bến tre">
-                        <figure>
-                            <img class="w-100" src="assets/images/best-sell2.jpg" alt="tôm càng xanh bến tre">
-                            <figcaption>tôm càng xanh bến tre</figcaption>
-                        </figure>
-                    </a>
-                    <div class="price-block">
-                        Giá: <a href="#" title="Liên hệ">Liên hệ</a>
-                    </div>
-                    <button class="btn addcart">Mua ngay</button>
                 </div>
 
                 <div class="item best-sell-item">
                     <a href="#" title="">
                         <figure>
-                            <img class="w-100" src="assets/images/best-sell3.jpg" alt="">
-                            <figcaption>tôn hùm baby</figcaption>
+                            <img class="w-100" src="assets/images/partner2.jpg" alt="">
+                            <figcaption></figcaption>
                         </figure>
                     </a>
-                    <div class="price-block">
-                        Giá: <a href="#" title="Liên hệ">Liên hệ</a>
-                    </div>
-                    <button class="btn addcart">Mua ngay</button>
                 </div>
 
                 <div class="item best-sell-item">
                     <a href="#" title="">
                         <figure>
-                            <img class="w-100" src="assets/images/best-sell4.jpg" alt="">
-                            <figcaption>Cá mú đỏ</figcaption>
+                            <img class="w-100" src="assets/images/partner3.jpg" alt="">
+                            <figcaption></figcaption>
                         </figure>
                     </a>
-                    <div class="price-block">
-                        Giá: <a href="#" title="Liên hệ">Liên hệ</a>
-                    </div>
-                    <button class="btn addcart">Mua ngay</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- END MAIN PRODUCT -->
-
-    <div class="container mb-4">
-        <div class="row">
-            <div class="col-md-12">
-                <a href="#"><img class="w-100" src="assets/images/bannerlist-3.png" alt="cua tuyết"></a>
-            </div>
-        </div>
-    </div>
-
-    <!-- MAIN PRODUCT -->
-    <div class="container mt-3 mb-3">
-
-        <div class="block best-sell py-2">
-                    
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="d-flex align-items-center block-title">
-                        <div class="flex-grow-1">Nghêu - sò - ốc</div>
-                        <a href="#" class="show-more pr-2">Xem tất cả <i class="fas fa-angle-right"></i></a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="owl-one owl-carousel owl-theme mt-3">
-
-                <div class="item best-sell-item">
-                    <a href="#" title="Cá mú biển">
-                        <figure>
-                            <img class="w-100" src="assets/images/best-sell1.jpg" alt="Cá mú biển">
-                            <figcaption>Cá mú biển</figcaption>
-                        </figure>
-                    </a>
-                    <div class="price-block">
-                        Giá: <a href="#" title="Liên hệ">Liên hệ</a>
-                    </div>
-                    <button class="btn addcart">Mua ngay</button>
-                </div>
-
-                <div class="item best-sell-item">
-                    <a href="#" title="tôm càng xanh bến tre">
-                        <figure>
-                            <img class="w-100" src="assets/images/best-sell2.jpg" alt="tôm càng xanh bến tre">
-                            <figcaption>tôm càng xanh bến tre</figcaption>
-                        </figure>
-                    </a>
-                    <div class="price-block">
-                        Giá: <a href="#" title="Liên hệ">Liên hệ</a>
-                    </div>
-                    <button class="btn addcart">Mua ngay</button>
                 </div>
 
                 <div class="item best-sell-item">
                     <a href="#" title="">
                         <figure>
-                            <img class="w-100" src="assets/images/best-sell3.jpg" alt="">
-                            <figcaption>tôn hùm baby</figcaption>
+                            <img class="w-100" src="assets/images/partner4.jpg" alt="">
+                            <figcaption></figcaption>
                         </figure>
                     </a>
-                    <div class="price-block">
-                        Giá: <a href="#" title="Liên hệ">Liên hệ</a>
-                    </div>
-                    <button class="btn addcart">Mua ngay</button>
                 </div>
 
                 <div class="item best-sell-item">
                     <a href="#" title="">
                         <figure>
-                            <img class="w-100" src="assets/images/best-sell4.jpg" alt="">
-                            <figcaption>Cá mú đỏ</figcaption>
+                            <img class="w-100" src="assets/images/partner5.jpg" alt="">
+                            <figcaption></figcaption>
                         </figure>
                     </a>
-                    <div class="price-block">
-                        Giá: <a href="#" title="Liên hệ">Liên hệ</a>
-                    </div>
-                    <button class="btn addcart">Mua ngay</button>
                 </div>
-            </div>
-        </div>
-    </div>
-    <!-- END MAIN PRODUCT -->
 
-    <!-- PRODUCT CUSTOMER -->
-    <div class="container mt-4 mb-3">
-
-        <div class="row">
-
-            <div class="col-lg-12">
-
-                <div class="block product-cus py-3">
-                    <div class="block-title pl-3">Dành cho bạn</div>
-
-                    <div class="border-bottom mb-3">
-
-                        <div class="row row-cols-2 row-cols-md-5">
-                            <div class="col">
-                                <div class="item product-cus-item">
-                                    <a href="#" title="">
-                                        <figure>
-                                            <div class="overflow-hidden">
-                                                <img class="w-100" src="assets/images/product-cus1.webp" alt="Laptop MacBook Pro 2020 13.3 inch MYD92SA/A (M1/8GB/SSD512GB) (Xám) - Hàng trưng bày">
-                                            </div>
-                                            <figcaption>Laptop MacBook Pro 2020 13.3 inch MYD92SA/A (M1/8GB/SSD512GB) (Xám) - Hàng trưng bày</figcaption>
-                                        </figure>
-                                        <div class="promo-price">36.890.000 ₫</div>
-                                        <div class="old-price">
-                                            <span class="price">39.990.000 ₫</span> 
-                                            <span class="rate">-7.75%</span>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-
-                            <div class="col">
-                                <div class="item product-cus-item">
-                                    <a href="#" title="Vỏ máy tính/ Case Hải Sản Thăng Long PV-H5 + quạt tản nhiệt 120mm(led)">
-                                        <figure>
-                                            <div class="overflow-hidden">
-                                                <img class="w-100" src="assets/images/product-cus2.webp" alt="Vỏ máy tính/ Case Hải Sản Thăng Long PV-H5 + quạt tản nhiệt 120mm(led)">
-                                            </div>
-                                            <figcaption>Vỏ máy tính/ Case Hải Sản Thăng Long PV-H5 + quạt tản nhiệt 120mm(led)</figcaption>
-                                        </figure>
-                                        <div class="promo-price">530.000 ₫</div>
-                                    </a>
-                                </div>
-                            </div>
-
-                            <div class="col">
-                                <div class="item product-cus-item">
-                                    <a href="#" title="Bộ chia/Hub USB 3.0 sang HDMI Orico UTH-SV (Bạc)">
-                                        <figure>
-                                            <div class="overflow-hidden">
-                                                <img class="w-100" src="assets/images/product-cus3.webp" alt="Bộ chia/Hub USB 3.0 sang HDMI Orico UTH-SV (Bạc)">
-                                            </div>
-                                            <figcaption>Bộ chia/Hub USB 3.0 sang HDMI Orico UTH-SV (Bạc)</figcaption>
-                                        </figure>
-                                        <div class="promo-price">495.000 ₫</div>
-                                    </a>
-                                </div>
-                            </div>
-
-                            <div class="col">
-                                <div class="item product-cus-item">
-                                    <a href="#" title="Tai nghe Logitech G333 (Tím)">
-                                        <figure>
-                                            <div class="overflow-hidden">
-                                                <img class="w-100" src="assets/images/product-cus4.webp" alt="Tai nghe Logitech G333 (Tím)">
-                                            </div>
-                                            <figcaption>Tai nghe Logitech G333 (Tím)</figcaption>
-                                        </figure>
-                                        <div class="promo-price">1.290.000 ₫</div>
-                                    </a>
-                                </div>
-                            </div>
-
-                            <div class="col">
-                                <div class="item product-cus-item">
-                                    <a href="#" title="product-cus5">
-                                        <figure>
-                                            <div class="overflow-hidden">
-                                                <img class="w-100" src="assets/images/product-cus5.webp" alt="product-cus5">
-                                            </div>
-                                            <figcaption>product-cus5</figcaption>
-                                        </figure>
-                                        <div class="promo-price">4.090.000 ₫</div>
-                                    </a>
-                                </div>
-                            </div>
-
-                            
-                        </div>
-                    </div>
-
-                    <div class="border-bottom mb-3">
-
-                        <div class="row row-cols-2 row-cols-md-5">
-                            <div class="col">
-                                <div class="item product-cus-item">
-                                    <a href="#" title="">
-                                        <figure>
-                                            <div class="overflow-hidden">
-                                                <img class="w-100" src="assets/images/product-cus1.webp" alt="Laptop MacBook Pro 2020 13.3 inch MYD92SA/A (M1/8GB/SSD512GB) (Xám) - Hàng trưng bày">
-                                            </div>
-                                            <figcaption>Laptop MacBook Pro 2020 13.3 inch MYD92SA/A (M1/8GB/SSD512GB) (Xám) - Hàng trưng bày</figcaption>
-                                        </figure>
-                                        <div class="promo-price">36.890.000 ₫</div>
-                                        <div class="old-price">
-                                            <span class="price">39.990.000 ₫</span> 
-                                            <span class="rate">-7.75%</span>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-
-                            <div class="col">
-                                <div class="item product-cus-item">
-                                    <a href="#" title="Vỏ máy tính/ Case Hải Sản Thăng Long PV-H5 + quạt tản nhiệt 120mm(led)">
-                                        <figure>
-                                            <div class="overflow-hidden">
-                                                <img class="w-100" src="assets/images/product-cus2.webp" alt="Vỏ máy tính/ Case Hải Sản Thăng Long PV-H5 + quạt tản nhiệt 120mm(led)">
-                                            </div>
-                                            <figcaption>Vỏ máy tính/ Case Hải Sản Thăng Long PV-H5 + quạt tản nhiệt 120mm(led)</figcaption>
-                                        </figure>
-                                        <div class="promo-price">530.000 ₫</div>
-                                    </a>
-                                </div>
-                            </div>
-
-                            <div class="col">
-                                <div class="item product-cus-item">
-                                    <a href="#" title="Bộ chia/Hub USB 3.0 sang HDMI Orico UTH-SV (Bạc)">
-                                        <figure>
-                                            <div class="overflow-hidden">
-                                                <img class="w-100" src="assets/images/product-cus3.webp" alt="Bộ chia/Hub USB 3.0 sang HDMI Orico UTH-SV (Bạc)">
-                                            </div>
-                                            <figcaption>Bộ chia/Hub USB 3.0 sang HDMI Orico UTH-SV (Bạc)</figcaption>
-                                        </figure>
-                                        <div class="promo-price">495.000 ₫</div>
-                                    </a>
-                                </div>
-                            </div>
-
-                            <div class="col">
-                                <div class="item product-cus-item">
-                                    <a href="#" title="Tai nghe Logitech G333 (Tím)">
-                                        <figure>
-                                            <div class="overflow-hidden">
-                                                <img class="w-100" src="assets/images/product-cus4.webp" alt="Tai nghe Logitech G333 (Tím)">
-                                            </div>
-                                            <figcaption>Tai nghe Logitech G333 (Tím)</figcaption>
-                                        </figure>
-                                        <div class="promo-price">1.290.000 ₫</div>
-                                    </a>
-                                </div>
-                            </div>
-
-                            <div class="col">
-                                <div class="item product-cus-item">
-                                    <a href="#" title="product-cus5">
-                                        <figure>
-                                            <div class="overflow-hidden">
-                                                <img class="w-100" src="assets/images/product-cus5.webp" alt="product-cus5">
-                                            </div>
-                                            <figcaption>product-cus5</figcaption>
-                                        </figure>
-                                        <div class="promo-price">4.090.000 ₫</div>
-                                    </a>
-                                </div>
-                            </div>
-
-                            
-                        </div>
-                    </div>
-
-                    <div class="">
-
-                        <div class="row row-cols-2 row-cols-md-5">
-                            <div class="col">
-                                <div class="item product-cus-item">
-                                    <a href="#" title="">
-                                        <figure>
-                                            <div class="overflow-hidden">
-                                                <img class="w-100" src="assets/images/product-cus1.webp" alt="Laptop MacBook Pro 2020 13.3 inch MYD92SA/A (M1/8GB/SSD512GB) (Xám) - Hàng trưng bày">
-                                            </div>
-                                            <figcaption>Laptop MacBook Pro 2020 13.3 inch MYD92SA/A (M1/8GB/SSD512GB) (Xám) - Hàng trưng bày</figcaption>
-                                        </figure>
-                                        <div class="promo-price">36.890.000 ₫</div>
-                                        <div class="old-price">
-                                            <span class="price">39.990.000 ₫</span> 
-                                            <span class="rate">-7.75%</span>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-
-                            <div class="col">
-                                <div class="item product-cus-item">
-                                    <a href="#" title="Vỏ máy tính/ Case Hải Sản Thăng Long PV-H5 + quạt tản nhiệt 120mm(led)">
-                                        <figure>
-                                            <div class="overflow-hidden">
-                                                <img class="w-100" src="assets/images/product-cus2.webp" alt="Vỏ máy tính/ Case Hải Sản Thăng Long PV-H5 + quạt tản nhiệt 120mm(led)">
-                                            </div>
-                                            <figcaption>Vỏ máy tính/ Case Hải Sản Thăng Long PV-H5 + quạt tản nhiệt 120mm(led)</figcaption>
-                                        </figure>
-                                        <div class="promo-price">530.000 ₫</div>
-                                    </a>
-                                </div>
-                            </div>
-
-                            <div class="col">
-                                <div class="item product-cus-item">
-                                    <a href="#" title="Bộ chia/Hub USB 3.0 sang HDMI Orico UTH-SV (Bạc)">
-                                        <figure>
-                                            <div class="overflow-hidden">
-                                                <img class="w-100" src="assets/images/product-cus3.webp" alt="Bộ chia/Hub USB 3.0 sang HDMI Orico UTH-SV (Bạc)">
-                                            </div>
-                                            <figcaption>Bộ chia/Hub USB 3.0 sang HDMI Orico UTH-SV (Bạc)</figcaption>
-                                        </figure>
-                                        <div class="promo-price">495.000 ₫</div>
-                                    </a>
-                                </div>
-                            </div>
-
-                            <div class="col">
-                                <div class="item product-cus-item">
-                                    <a href="#" title="Tai nghe Logitech G333 (Tím)">
-                                        <figure>
-                                            <div class="overflow-hidden">
-                                                <img class="w-100" src="assets/images/product-cus4.webp" alt="Tai nghe Logitech G333 (Tím)">
-                                            </div>
-                                            <figcaption>Tai nghe Logitech G333 (Tím)</figcaption>
-                                        </figure>
-                                        <div class="promo-price">1.290.000 ₫</div>
-                                    </a>
-                                </div>
-                            </div>
-
-                            <div class="col">
-                                <div class="item product-cus-item">
-                                    <a href="#" title="product-cus5">
-                                        <figure>
-                                            <div class="overflow-hidden">
-                                                <img class="w-100" src="assets/images/product-cus5.webp" alt="product-cus5">
-                                            </div>
-                                            <figcaption>product-cus5</figcaption>
-                                        </figure>
-                                        <div class="promo-price">4.090.000 ₫</div>
-                                    </a>
-                                </div>
-                            </div>
-
-                            
-                        </div>
-                    </div>
-
+                <div class="item best-sell-item">
+                    <a href="#" title="">
+                        <figure>
+                            <img class="w-100" src="assets/images/partner6.jpg" alt="">
+                            <figcaption></figcaption>
+                        </figure>
+                    </a>
                 </div>
+
+                <div class="item best-sell-item">
+                    <a href="#" title="">
+                        <figure>
+                            <img class="w-100" src="assets/images/partner7.jpg" alt="">
+                            <figcaption></figcaption>
+                        </figure>
+                    </a>
+                </div>
+
+               
             </div>
 
+            
         </div>
     </div>
-    <!-- END PRODUCT CUSTOMER -->
+    <!-- PARTNER -->
 
-    <nav aria-label="Page navigation example">
+    <!-- <nav aria-label="Page navigation example">
       <ul class="pagination justify-content-center">
         <li class="page-item"><a class="page-link" href="#">Previous</a></li>
         <li class="page-item"><a class="page-link" href="#">1</a></li>
@@ -850,96 +683,120 @@
         <li class="page-item"><a class="page-link" href="#">3</a></li>
         <li class="page-item"><a class="page-link" href="#">Next</a></li>
       </ul>
-    </nav>
+    </nav> -->
 
 
     <footer class="footer-area">
         <div class="footer-cat">
             <div class="container">
-                <div class="row row-cols-2 row-cols-md-5 py-3">
-                    <div class="col">
-                        <p class="title">Hỗ trợ khách hàng</p>
-                        <ul class="list-unstyled">
-                            <li><a href="#">Thẻ ưu đãi</a></li>
-                            <li><a href="#">Trung tâm bảo hành</a></li>
-                            <li><a href="#">Thanh toán và giao hàng</a></li>
-                            <li><a href="#">Dịch vụ sửa chữa và bảo trì</a></li>
-                            <li><a href="#">Doanh nghiệp thân thiết</a></li>
+                <div class="row py-4">
+                    <div class="col-md-4">
+
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="logo">
+                                <a href="index.php"><img src="assets/images/header/logo.png" alt="" class="img-fluid"></a>
+                            </div>
+                            <div class="web-title-block">
+                                <h2 class="web-title">Hải sản Thăng Long</h2>
+                                <p>Uy tín chất lượng</p>
+                            </div>
+                        </div>
+
+                  
+                        <ul class="list-unstyled links">
+                            <li class="d-flex">
+                                <i class="fas fa-map-marker-alt fa-fw mt-2"></i> Địa chỉ: 549/14/23A Xô Viết nghệ Tĩnh, P.26, Q.Bình Thạnh,TP.HCM
+                            </li>
+                            <li class="d-flex">
+                                <i class="fa fa-phone fa-fw mt-1"></i>
+                                Điện thoại:&nbsp;<a href="tel:0918137177"> 0942.909.595</a>
+                            </li>
+                            <li class="d-flex">
+                                <i class="fas fa-envelope fa-fw mt-1"></i>
+                                Email:&nbsp;<a href="mailto:maihoanglongg@gmail.com"> thuyhaisanthanglong@gmail.com</a>
+                            </li>
+                            <li class="d-flex">
+                                <i class="fas fa-home fa-fw mt-1"></i>
+                                Website:&nbsp; https://haisanthanglong.com
+                            </li>
                         </ul>
                     </div>
 
-                    <div class="col">
-                        <p class="title">Chính sách</p>
-                        <ul class="list-unstyled">
-                            <li><a href="#">Quy định chung</a></li>
-                            <li><a href="#">Chính sách Bảo mật Thông tin</a></li>
-                            <li><a href="#">Chính sách Vận chuyển và Lắp đặt</a></li>
-                            <li><a href="#">Chính sách bảo hành</a></li>
-                            <li><a href="#">Chính sách đổi trả và hoàn tiền</a></li>
-                            <li><a href="#">Quy định giá và hình thức thanh toán</a></li>
-                            <li><a href="#">Chính sách trả góp</a></li>
-                        </ul>
+                    <div class="col-md-8">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="block">
+                                    <div class="block-title">THÔNG TIN</div>
+                                    <ul class="list-unstyled">
+                                        <li><a href="#">Giới thiệu</a></li>
+                                        <li><a href="#">Sản phảm</a></li>
+                                        <li><a href="#">Tin tức</a></li>
+                                        <li><a href="#">Chứng chỉ/ chứng nhận</a></li>
+                                        <li><a href="contact">Liên hệ</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="block">
+                                    <div class="block-title">CHÍNH SÁCH</div>
+                                    <ul class="list-unstyled">
+                                        <li><a href="#" title="Chính sách vận chuyển">Chính sách vận chuyển</a></li>
+                                        <li><a href="#" title="Chính sách thanh toán">Chính sách thanh toán</a></li>
+                                        <li><a href="#" title="Chính sách giao hàng">Chính sách giao hàng</a></li>
+                                        <li><a href="#" title="Chính sách bảo mật">Chính sách bảo mật</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="block">
+                                    <div class="block-title">FANPAGE FACEBOOK</div>
+                                    <div class="fb-page fb_iframe_widget" data-href="https://www.facebook.com/thuyhaisanthanglong" data-tabs="timeline" data-width="600" data-height="200" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true" fb-xfbml-state="rendered" fb-iframe-plugin-query="adapt_container_width=true&amp;app_id=&amp;container_width=300&amp;height=200&amp;hide_cover=false&amp;href=https%3A%2F%2Fwww.facebook.com%2Fthuyhaisanthanglong&amp;locale=vi_VN&amp;sdk=joey&amp;show_facepile=true&amp;small_header=true&amp;tabs=timeline&amp;width=600"><span style="vertical-align: bottom; width: 300px; height: 200px;"><iframe name="f35471b6aa8807" width="600px" height="200px" data-testid="fb:page Facebook Social Plugin" title="fb:page Facebook Social Plugin" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media" src="https://www.facebook.com/v2.6/plugins/page.php?adapt_container_width=true&amp;app_id=&amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fx%2Fconnect%2Fxd_arbiter%2F%3Fversion%3D46%23cb%3Df161f624b60dd38%26domain%3Dhaisanthanglong.com%26is_canvas%3Dfalse%26origin%3Dhttps%253A%252F%252Fhaisanthanglong.com%252Ff1ca00e9ad428e4%26relation%3Dparent.parent&amp;container_width=300&amp;height=200&amp;hide_cover=false&amp;href=https%3A%2F%2Fwww.facebook.com%2Fthuyhaisanthanglong&amp;locale=vi_VN&amp;sdk=joey&amp;show_facepile=true&amp;small_header=true&amp;tabs=timeline&amp;width=600" style="border: none; visibility: visible; width: 300px; height: 200px;" class=""></iframe></span></div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="row align-items-center">
+                    <div class="col-md-4 mb-3">
+                        <a class="xembando" href="https://goo.gl/maps/xwy1ab9ZBVBf2ZyK9" target="_blank">Xem bản đồ</a>
                     </div>
 
-                    <div class="col">
-                        <p class="title">Thông tin Hải Sản Thăng Long</p>
-                        <ul class="list-unstyled">
-                            <li><a href="#">Giới thiệu Hải Sản Thăng Long</a></li>
-                            <li><a href="#">Thông tin liên hệ</a></li>
-                            <li><a href="#">Hệ thống Showroom</a></li>
-                            <li><a href="#">Hỏi đá</a></li>
-                            <li><a href="#">Tin công nghệ</a></li>
-                        </ul>
+                    <div class="col-md-8 mb-3">
+                        <div class="mangxahoi_footer">
+                            <a href="" target="_blank"><img src="assets/images/social1.png" alt="Youtube"></a>
+                            <a href="ft3" target="_blank"><img src="assets/images/social2.png" alt="Tweeter"></a>
+                            <a href="" target="_blank"><img src="assets/images/social3.png" alt="Google Plus"></a>
+                            <a href="" target="_blank"><img src="assets/images/social4.png" alt="Facebook"></a>
+                        </div>
                     </div>
-                    
-                    <div class="col">
-                        <p class="title">Cộng đồng Hải Sản Thăng Long</p>
-                        <ul class="list-unstyled">
-                            <li><a href="#">Giới thiệu Hải Sản Thăng Long</a></li>
-                            <li><a href="#">Thông tin liên hệ</a></li>
-                            <li><a href="#">Hệ thống Showroom</a></li>
-                            <li><a href="#">Hỏi đáp</a></li>
-                            <li><a href="#">Tin công nghệ</a></li>
-                        </ul>
-                    </div>
+                </div>
 
-                    <div class="col">
-                        <p class="title">Email liên hệ</p>
-                        <ul class="list-unstyled">
-                            <li>Hỗ trợ Khách hàng:<br><a href="mailto:" class="contact">cskh@phongvu.vn</a></li>
-                            <li>Liên hệ báo giá:<br><a href="mailto:" class="contact">baogia@phongvu.vn</a></li>
-                            <li>Hợp tác phát triển:<br><a href="mailto:" class="contact">hoptac@phongvu.vn</a></li>
-                        </ul>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="footer-tags">
+                            <p>Từ khóa:&emsp;</p>
+                            <a href="" target="_blank" title="hải sản tươi sống">hải sản tươi sống</a> <span>|</span>
+                            <a href="http://haisanthanglong.com/tom-hum" target="_blank" title="tôm hùm">tôm hùm</a> <span>|</span>
+                            <a href="http://haisanthanglong.com/ca-mu-bien" target="_blank" title="cá bống mú">cá bống mú</a> <span>|</span>
+                            <a href="" target="_blank" title="hải sản tươi ngon">hải sản tươi ngon</a> <span>|</span>
+                            <a href="http://haisanthanglong.com/" target="_blank" title="hải sản sạch">hải sản sạch</a> <span>|</span>
+                            <a href="http://haisanthanglong.com/tom-cang-xanh" target="_blank" title="Tôm càng xanh">Tôm càng xanh</a> <span>|</span>
+                            <a href="http://haisanthanglong.com/ca-tai-tuong" target="_blank" title="Cá tai tượng">Cá tai tượng</a> <span>|</span>
+                            <a href="http://haisanthanglong.com/ca-lang" target="_blank" title="Cá Lăng">Cá Lăng</a> <span>|</span>
+                            <a href="http://haisanthanglong.com/ca-bop-tuoi-song" target="_blank" title="Cá Bớp">Cá Bớp</a> <span>|</span>
+                            <a href="http://haisanthanglong.com/ca-tam-bien" target="_blank" title="Cá Tầm">Cá Tầm</a> <span>|</span>
+                            <a href="http://haisanthanglong.com/ca-chem" target="_blank" title="Cá chẽm">Cá chẽm</a>
+                        </div>
                     </div>
-
                 </div>
             </div>
         </div>
 
-        <div class="container">
-            <div class="row py-3">
-                <div class="col-md-4">
-                    <p class="title">Công ty cổ phần thương mại - dịch vụ Hải Sản Thăng Long</p>
-                    <p>© 1997 - 2020 Công Ty Cổ Phần Thương Mại - Dịch Vụ Hải Sản Thăng Long<br>Giấy chứng nhận đăng ký doanh nghiệp: 0304998358 do Sở KH-ĐT TP.HCM cấp lần đầu ngày 30 tháng 05 năm 2007</p>
-                </div>
-                <div class="col-md-6">
-                    <div class="css-wtxc87">
-                        <span class="title">Địa chỉ trụ sở chính</span>:<p>Tầng 5, Số 117-119-121 Nguyễn Du, Phường Bến Thành, Quận 1, Thành Phố Hồ Chí Minh</p>
-                        <span class="title">Văn phòng điều hành miền Bắc</span>:<p>Tầng 6, Số 1 Phố Thái Hà, Phường Trung Liệt, Quận Đống Đa, Hà Nội</p>
-                        <span class="title">Văn phòng điều hành miền Nam</span>:<p>Tầng 11 Minh Long Tower, số 17 Bà Huyện Thanh Quan, Phường Võ Thị Sáu, Quận 3, TP. Hồ Chí Minh</p>
-                        
-                    </div>
-                </div>
-                <div class="col-md-2 align-self-center">
-                    <a href="http://online.gov.vn/Home/WebDetails/4549" rel="noreferrer noopener" target="_blank" class="css-1p9dqzw">
-                        <img src="https://phongvu.vn/media/wysiwyg/phongvu/phongvu_v3/da-dang-ky.png" alt="verified logo" class="img-fluid">
-                    </a>
-                    <a href="//www.dmca.com/Protection/Status.aspx?ID=53b44883-ed2a-434d-902b-5adce10aafd5&amp;refurl=https://phongvu.vn" title="DMCA.com Protection Status" class="dmca-badge">
-                        <img src="https://images.dmca.com/Badges/dmca-badge-w100-2x1-02.png?ID=53b44883-ed2a-434d-902b-5adce10aafd5" class="img-fluid" alt="DMCA.com Protection Status">
-                    </a>
-                </div>
-            </div>
-        </div>    
+
     </footer>
 
     
@@ -1026,7 +883,7 @@
             }
         });
 
-        var owl = $('.owl-one');
+        var owl = $('.owl-product');
         owl.owlCarousel({
             loop: true,
             margin: 12,
@@ -1047,7 +904,7 @@
             }
         });
 
-        var owl2 = $('.owl-two');
+        var owl2 = $('.owl-partner');
         owl2.owlCarousel({
             loop: true,
             margin: 20,
@@ -1060,11 +917,11 @@
                     nav: false
                 },
                 600: {
-                    items: 2,
+                    items: 4,
                     nav: false
                 },
                 1000: {
-                    items: 4,
+                    items: 6,
                     nav: false,
                     // loop:false
                 }
@@ -1093,6 +950,20 @@
                     // loop:false
                 }
             }
+        });
+
+
+        (function($) {
+            $(function() {
+                $("#scroller").simplyScroll({orientation:'vertical',customClass:'vert'});
+            });
+        })(jQuery);
+
+        $().ready(function(e) {
+            $('.list-video').change(function(){
+              var url='https://www.youtube.com/embed/'+$(this).val();
+              $('#ajax_video iframe').attr('src',url);
+            })
         });
     </script>
 
