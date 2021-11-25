@@ -41,7 +41,7 @@ body {
 .main-bg-color, .main-menu {
   background-color: var(--main-bg-color); }
 
-.bg-white, body, .product-list, .product-list .product-list-item, .contact-page .block {
+.bg-white, body, .product-list, .product-list .product-list-item {
   background-color: #fff; }
 
 .cat-link-style, .main-menu .drop-menu-top .dropdown-menu .dropdown-item {
@@ -66,18 +66,32 @@ header {
     header .search-block .form-group {
       margin-bottom: 0; }
     header .search-block .input-search {
-      background-color: #F5F5F5; }
+      width: 100%;
+      height: 48px;
+      outline: none;
+      padding: 0;
+      border: 1px solid #e8e8e8;
+      background: #f4f4f4;
+      text-indent: 18px;
+      border-radius: 25px;
+      color: #818181;
+      font-size: 14px; }
     header .search-block .btn-search {
-      background-color: #1435C3;
-      color: #fff;
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      border: 1px solid;
+      line-height: 35px;
+      cursor: pointer;
+      text-align: center;
+      color: transparent;
+      font-size: 16px;
       position: absolute;
-      top: 0px;
-      right: 0;
-      border: 0;
-      height: 37px;
-      padding: 0 9px;
-      margin-right: 1px;
-      border-radius: 4px; }
+      right: 0px;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      background: #e51429 url(../images/header/search.png) center no-repeat; }
   header .logo {
     width: 100px; }
   header h1 {
@@ -87,6 +101,30 @@ header {
     text-transform: uppercase; }
   header a {
     color: #fff; }
+  header .web-title-block {
+    margin-left: .5rem;
+    text-align: center; }
+    header .web-title-block .web-title {
+      font-size: 1.75rem;
+      font-weight: 700;
+      color: #e51429;
+      margin-bottom: 0; }
+    header .web-title-block p {
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin-bottom: 0; }
+  header .header-contact {
+    margin-right: .5rem;
+    font-size: 14px; }
+    header .header-contact img {
+      margin-right: 5px; }
+    header .header-contact p {
+      margin-bottom: 0; }
+    header .header-contact span {
+      display: block;
+      color: #084ea0;
+      font: 20px RobotoBold;
+      font-weight: bold; }
 
 /*MENU*/
 .main-menu {
@@ -386,15 +424,9 @@ header {
     font: 14px RobotoRegular;
     color: #084ea0; }
   .product-list .block .block-title:after {
-    position: absolute;
-    content: '';
-    left: 0;
     right: 0;
-    bottom: 0;
-    width: 70px;
-    height: 2px;
-    background: #e51429;
-    margin: 0 auto; }
+    margin: 0 auto;
+    background: #e51429; }
 
 /*END PRODUCT LIST*/
 /*PRODUCT DETAIL*/
@@ -494,15 +526,9 @@ header {
     font: 14px RobotoRegular;
     color: #084ea0; }
   .post-list .block .block-title:after {
-    position: absolute;
-    content: '';
-    left: 0;
     right: 0;
-    bottom: 0;
-    width: 70px;
-    height: 2px;
-    background: #e51429;
-    margin: 0 auto; }
+    margin: 0 auto;
+    background: #e51429; }
 .post-list .post-list-item {
   margin-bottom: 1rem; }
   .post-list .post-list-item figure {
@@ -544,15 +570,9 @@ header {
     font: 14px RobotoRegular;
     color: #084ea0; }
   .post-detail .block .block-title:after {
-    position: absolute;
-    content: '';
-    left: 0;
     right: 0;
-    bottom: 0;
-    width: 70px;
-    height: 2px;
-    background: #e51429;
-    margin: 0 auto; }
+    margin: 0 auto;
+    background: #e51429; }
 .post-detail .social {
   padding: 15px 10px 10px 10px;
   line-height: normal;
@@ -581,7 +601,7 @@ header {
   background: #ffffff;
   border: 1px solid #d8d8d8;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.15); }
-  .wrap-cart .titletht {
+  .wrap-cart .block-title {
     font-family: QuickSandBold;
     color: black;
     border-bottom: 1px solid #EEEEEE;
@@ -589,7 +609,7 @@ header {
     padding-bottom: 10px;
     margin-bottom: 15px;
     font-size: 18px; }
-    .wrap-cart .titletht:after {
+    .wrap-cart .block-title:after {
       position: absolute;
       content: '';
       bottom: -1px;
@@ -597,97 +617,121 @@ header {
       width: 100px;
       height: 3px;
       background: #000; }
+  .wrap-cart .payment-block {
+    font-size: 14px;
+    border: 1px solid #d9d9d9;
+    border-radius: 10px;
+    padding: 10px; }
+    .wrap-cart .payment-block .payment-block-right {
+      padding: 10px;
+      background: #f7f7f7;
+      border-radius: 10px; }
+  .wrap-cart .cart-items {
+    padding: 10px;
+    background: #FAFAFA; }
+    .wrap-cart .cart-items .cart-img img {
+      border-radius: 10px;
+      box-shadow: 0px 0px 10px #ccc; }
+    .wrap-cart .cart-items .cart-img .del-item {
+      background: #f1f1f1;
+      display: inline-block;
+      font-size: 13px;
+      color: #777;
+      border-radius: 3px;
+      padding: 3px 8px;
+      cursor: pointer; }
+      .wrap-cart .cart-items .cart-img .del-item:hover {
+        color: #fff;
+        background: #000; }
+    .wrap-cart .cart-items .cart-info a {
+      font-size: 14px;
+      color: #000;
+      display: block;
+      font-weight: 700; }
+    .wrap-cart .cart-items .pay-cart {
+      align-items: flex-start;
+      margin: 0 0 10px 0;
+      position: relative; }
+      .wrap-cart .cart-items .pay-cart:after {
+        position: absolute;
+        content: '';
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 2px;
+        background: linear-gradient(to right, transparent 0%, #000 50%, transparent 100%); }
+    .wrap-cart .cart-items .cart-price {
+      margin: 8px 0;
+      justify-content: flex-end;
+      display: inline-block; }
+      .wrap-cart .cart-items .cart-price .quantity-counter {
+        line-height: normal;
+        text-align: center;
+        width: 110px;
+        border: 2px solid #eee;
+        border-radius: 18px;
+        padding: 2px; }
+        .wrap-cart .cart-items .cart-price .quantity-counter .counter-procart {
+          border: 0px;
+          outline: none;
+          border-radius: 50%; }
+        .wrap-cart .cart-items .cart-price .quantity-counter span {
+          background-color: #f3f3f3;
+          transition: color 300ms ease-in-out 0s, background-color 300ms ease-in-out 0s, background-position 300ms ease-in-out 0s;
+          color: #333;
+          padding: 8px 0px 10px;
+          cursor: pointer;
+          width: 30px;
+          height: 30px;
+          line-height: 10px;
+          font-size: 17px;
+          font-weight: 600;
+          text-align: center; }
+          .wrap-cart .cart-items .cart-price .quantity-counter span:hover {
+            color: #fff;
+            background: #000; }
+        .wrap-cart .cart-items .cart-price .quantity-counter .quantity-procat {
+          width: 40%;
+          box-sizing: border-box;
+          border: 0px;
+          outline: none;
+          box-shadow: none;
+          padding: 0px;
+          color: #333;
+          text-align: center;
+          background: transparent; }
+        .wrap-cart .cart-items .cart-price .quantity-counter span.counter-plus {
+          line-height: 15px; }
+    .wrap-cart .cart-items .total-cart .buy-more {
+      color: #555;
+      font-size: 14px; }
 
 /*END CART*/
 /*CONTACT*/
-.contact-page .row-divine:not(:last-child) {
-  border-bottom: 1px solid #ebebeb;
-  padding-bottom: 20px; }
-.contact-page .row-divine:not(:first-child) {
-  padding-top: 10px; }
-.contact-page .block {
-  border-radius: 10px;
-  -webkit-box-shadow: 0 0 5px #999;
-  box-shadow: 0 0 5px #999; }
-  .contact-page .block img {
-    border-radius: 6px; }
-  .contact-page .block .contact-title {
-    color: #d42333;
-    font-size: 1rem;
-    font-weight: 600;
-    margin-bottom: 7px; }
-  .contact-page .block .contact-title-bn {
-    font-weight: 600;
-    margin-bottom: 10px; }
-  .contact-page .block iframe {
-    border: 0;
-    border-radius: 6px; }
-  .contact-page .block .contact-map-block {
-    position: relative;
-    display: block;
-    height: 300px;
-    width: 100%;
-    margin-top: 5px; }
-    .contact-page .block .contact-map-block img {
-      height: 100%; }
-    .contact-page .block .contact-map-block > span {
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      background-color: rgba(0, 0, 0, 0);
-      color: transparent;
-      -webkit-transition: 0.5s;
-      transition: 0.5s;
-      border-radius: 4px;
-      text-align: center;
-      padding-top: 25%;
-      font-size: 18px; }
-      .contact-page .block .contact-map-block > span:hover {
-        background-color: rgba(0, 0, 0, 0.5);
-        color: white; }
-  .contact-page .block .company-title {
-    color: #2d3877;
-    margin-bottom: 10px; }
-.contact-page .showroom h2 {
-  font-size: 2rem;
-  margin: 1rem 0; }
-.contact-page .showroom p {
-  margin-bottom: 0;
-  font-weight: 500; }
-.contact-page .showroom .store-block {
-  border-bottom: 1px solid #ebebeb;
-  padding: 1rem; }
-  .contact-page .showroom .store-block:nth-child(odd) {
-    border-right: 1px solid #ebebeb; }
-  .contact-page .showroom .store-block .store-title span {
-    display: inline-block;
-    color: #fff;
-    background: #2d3877;
-    border-radius: 50%;
-    width: 35px;
-    min-width: 35px;
-    height: 35px;
-    min-height: 35px;
-    line-height: 35px;
-    text-align: center;
-    margin: 0 5px 10px 0; }
+.contact-page .block .block-title {
+  border-bottom: none; }
+  .contact-page .block .block-title h1 {
+    font: 1.5rem SVNAvoBold;
+    margin-bottom: 0;
+    font-weight: 700;
+    color: #252525; }
+  .contact-page .block .block-title a {
+    font: 14px RobotoRegular;
+    color: #084ea0; }
+  .contact-page .block .block-title:after {
+    right: 0;
+    margin: 0 auto;
+    background: #e51429; }
+.contact-page .information-contact input, .contact-page .information-contact textarea {
+  border: 1px solid #b19a6f;
+  background: #f5f5f5; }
+.contact-page .information-contact .btn-secondary {
+  background-color: var(--sub-bg-color);
+  width: 120px;
+  height: 40px; }
 
 /*END CONTACT*/
-.web-title-block {
-  margin-left: .5rem;
-  text-align: center; }
-  .web-title-block .web-title {
-    font-size: 1.75rem;
-    font-weight: 700;
-    color: #e51429;
-    margin-bottom: 0; }
-  .web-title-block p {
-    font-size: 1.5rem;
-    font-weight: 700;
-    margin-bottom: 0; }
-
 /*FOOTER*/
 footer {
   background-color: #f7f7f7;
