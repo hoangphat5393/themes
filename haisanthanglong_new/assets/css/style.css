@@ -460,6 +460,12 @@ header {
   color: #fff;
   padding: 10px 15px 8px;
   font: 15px RobotoBold; }
+.product-detail .nav-tabs a {
+  background: #f0f1f2;
+  margin-right: .5rem;
+  text-transform: uppercase;
+  color: #262626;
+  font-weight: bold; }
 .product-detail .tab-content .tab-pane {
   padding: 1rem;
   border: 1px solid #e1e1e1;

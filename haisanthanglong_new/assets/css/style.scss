@@ -625,14 +625,22 @@ header{
     	}
     }
 
-    .tab-content{
+    .nav-tabs a{
+		background: #f0f1f2;
+		margin-right: .5rem;
+		text-transform: uppercase;
+		color: #262626;
+		font-weight: bold;
+	}
+
+	.tab-content{
     	.tab-pane{
     		padding: 1rem;
 			border: 1px solid #e1e1e1;
 			border-top: none;	
-    	}
-    	
+    	}	
     }
+    
 }
 
 .quanlity{
